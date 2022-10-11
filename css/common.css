@@ -21,13 +21,14 @@
 
 img {
     width: 200px;
+    height: 200px;
     display: block;
 }
  
 h1,h2,h3 {
     color: var(--headers-color);
     font-family:Lora, serif;
-    font-size: 38px;
+    
 }
 
 p{
