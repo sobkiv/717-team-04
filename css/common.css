@@ -19,12 +19,10 @@
     --carousel-item-color: rgba(121, 162, 7, 0.23);
     --carousel-image-color: rgb(13, 60, 0);
     --carousel-background-color: rgba(13, 60, 0, 0.99);
-    --kind-carousel-item-color: rgb(14, 55, 3)
+    --kind-carousel-item-color: rgb(14, 55, 3);
 }
 
 img {
-    /* width: 200px;
-    height: 200px; */
     display: block;
 }
  
