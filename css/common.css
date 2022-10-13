@@ -17,11 +17,13 @@
     --background-color:rgb(236,210,160);
     --another-background-color:#faf5f2;
     --carousel-item-color: rgba(121, 162, 7, 0.23);
+    --carousel-image-color: rgb(13, 60, 0);
+    --carousel-background-color: rgba(13, 60, 0, 0.99);
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    /* width: 200px;
+    height: 200px; */
     display: block;
 }
  
