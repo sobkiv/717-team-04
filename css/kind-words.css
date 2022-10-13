@@ -1,0 +1,33 @@
+.kind-words {
+   padding: 90px 0;
+}
+.kind-words__container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-size: 17px;
+   line-height: 25.5px;
+   max-width: 100%;
+   width: auto;
+   padding: 0 30px 180px 30px;
+   margin: 0;
+}
+.kind-words__items-title {
+   color: var(--btn-price-color);
+   font-weight: bold;
+   font-size: 14px;
+   letter-spacing: 3.8px;
+   line-height: 20px;
+}
+.kind-words__items-subtitle {
+   margin-top: 20px;
+   max-width: 100%;
+   font-size: 34px;
+   line-height: 1.2;
+}
+.kind-words__items-text {
+   margin-top: 25px;
+   font-size: 18px;
+   line-height: 1.56;
+   color: var(--header-text-color);
+}
