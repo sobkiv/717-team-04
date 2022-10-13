@@ -71,7 +71,7 @@
    margin-top: -90px;
 }
 .kind-words__image-item {
-   max-width: 100%;
+   max-width: 50%;
    height: auto;
 }
 .kind-carousel {
@@ -81,5 +81,24 @@
    background: url(../img/kind-words-background.webp) 50% 50% / cover no-repeat, var(--carousel-image-color); 
 }
 .kind-carousel-container {
-   background-color: var(--carousel-background-color)
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--carousel-background-color);
+}
+.kind-carousel__item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 47%;
+   max-width: 225px;
+   height: 15em;
+   max-height: 200px;
+   margin: 120px 20px;
+   background-color: var(--kind-carousel-item-color);
+}
+.kind-carousel__img {
+   width: 80%;
+   height: 50%;
 }
