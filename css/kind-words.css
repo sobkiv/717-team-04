@@ -1,8 +1,10 @@
 .kind-words {
    padding: 90px 0;
+   margin: auto;
 }
 .kind-words__container {
    display: flex;
+   margin: auto;
    flex-direction: column;
    justify-content: center;
    font-size: 17px;
@@ -30,4 +32,44 @@
    font-size: 18px;
    line-height: 1.56;
    color: var(--header-text-color);
+}
+.kind-words__element {
+   margin-top: 5px;
+   /* position: relative; */
+   display: flex;
+   max-width: 100%;
+   flex-wrap: nowrap;
+   padding: 7.5px 0;
+   /* justify-content: flex-start; */
+}
+.kind-words__container-photo {
+   /* display: flex; */
+   margin: 7.5px;
+   
+   /* width: 70px; */
+}
+.kind-words__photo {
+   border-radius: 50%;
+   max-width: 100%;
+   width: 70px;
+   height: 70px;
+}
+.kind-words__container-text {
+   /* position: relative; */
+   display: flex;
+   flex-direction: column;
+   /* margin: 7.5px; */
+   max-width: 73%;
+   padding: 5px;
+}
+.kind-words__article-title {
+   font-size: 22px;
+   font-weight: 900;
+   line-height: 1.4;
+}
+.kind-words__article-story {
+   font-size: 17px;
+   line-height: 1.5;
+   letter-spacing: 0.5px;
+   width: 100%;
 }
