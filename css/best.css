@@ -68,20 +68,7 @@
     flex-wrap: wrap;
 }
     
-@media (min-width: 800px) {
-    .best__item-tabs {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 15px;
-    }
-  }
-  @media (min-width: 970px) {
-    .best__item-tabs {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
-    }
-  } 
+ 
 .best__product {
     display: flex;
     flex-direction: column;
