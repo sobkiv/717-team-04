@@ -114,8 +114,8 @@
       font-size: 17px;
       line-height: 25.5px;
    }
-   .kind-words__image {
-   }
+   /* .kind-words__image {
+   } */
    .kind-words__image-item {
       object-fit: cover;
       height: 100%;
