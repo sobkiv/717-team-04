@@ -9,13 +9,14 @@
 
 :root {
     font-family: 'Source Sans Pro', sans-serif;
-    --btn-price-color:#79a207;
+    font-size: calc(1vw + 0.7em);
+    --btn-price-color: #79a207;
     --headers-color: #0d3c00;
-    --header-text-color:#191c18;
-    --text-color:#707070;
-    --btn-text:#FFFFFF;
-    --background-color:rgb(236,210,160);
-    --another-background-color:#faf5f2;
+    --header-text-color: #191c18;
+    --text-color: #707070;
+    --btn-text: #FFFFFF;
+    --background-color: rgb(236, 210, 160);
+    --another-background-color: #faf5f2;
     --carousel-item-color: rgba(121, 162, 7, 0.23);
     --carousel-image-color: rgb(13, 60, 0);
     --carousel-background-color: rgba(13, 60, 0, 0.99);
@@ -27,18 +28,20 @@ img {
     height: 200px; */
     display: block;
 }
- 
-h1,h2,h3 {
+
+h1,
+h2,
+h3 {
     color: var(--headers-color);
-    font-family:Lora, serif;
-    
+    font-family: Lora, serif;
+
 }
 
-p{
-   color:var(--text-color);
+p {
+    color: var(--text-color);
 }
 
-a{
+a {
     text-decoration: none;
-    color:var(--header-text-color);
+    color: var(--header-text-color);
 }
