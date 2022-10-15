@@ -1,8 +1,6 @@
 .our-plants {
     display:flex;
     flex-direction: column;
-    margin: 40px;
-    min-width: 370px;
 
 }.our-plants__subtitle {
     font-size: 14px;
@@ -28,20 +26,6 @@
     padding: 10px;
 }
 .indoor__img,.outdoor__img{
-   height: 50vh;
-   width: 80%;
-   object-fit: cover;
-   object-position:center;
-
-}
-.our-plants__items {
-   max-width: 320px;
-   display: flex;
-   flex-direction:column ;
-   justify-content: center;
-   align-items: center;
-}
-.indoor__item {
-    justify-content: center;
-   align-items: center;
+    max-width:100%;
+         height:auto;
 }
