@@ -9,13 +9,8 @@
 
 :root {
     font-family: 'Source Sans Pro', sans-serif;
-<<<<<<< HEAD
-    font-size: calc(1vw + 0.7em);
+    /* font-size: calc(1vw + 0.7em); */
     --btn-price-color: #79a207;
-=======
-    --btn-price-color:#79a207;
-    --subtitle-color:#79a207;
->>>>>>> 6c291be043674d7b79a2072be72095e49499cafe
     --headers-color: #0d3c00;
     --header-text-color: #191c18;
     --text-color: #707070;
