@@ -87,14 +87,14 @@
     }
   }
   
-  @media (min-width: 930px) {
+  @media (min-width: 1000px) {
     .best__item-tabs {
       display: grid;
       grid-template-columns:  1fr 1fr 1fr ;
       gap: 15px;
     }
   }
-  @media (min-width: 1150px) {
+  @media (min-width: 1250px) {
     .best__item-tabs {
       display: grid;
       grid-template-columns: repeat(4, 1fr)   ;
