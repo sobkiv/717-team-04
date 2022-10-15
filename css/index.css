@@ -1,5 +1,13 @@
 @import url(common.css);
 @import url(contacts__information__form.css);
 @import url(header.css);
+<<<<<<< HEAD
 @import url(footer.css);
 @import url(kind-words.css);
+=======
+@import url(kind-words.css);
+@import url(faq.css);
+@import url(best.css);
+@import url(footer.css);
+@import url(our-plants.css);
+>>>>>>> 6c291be043674d7b79a2072be72095e49499cafe

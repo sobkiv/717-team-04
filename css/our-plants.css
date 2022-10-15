@@ -1,0 +1,31 @@
+.our-plants {
+    display:flex;
+    flex-direction: column;
+
+}.our-plants__subtitle {
+    font-size: 14px;
+    color: var( --subtitle-color);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.our-plants__title {
+    font-size: 34px;
+}
+.our-plants__text {
+    color: var(--headers-color);
+    font-size: 18px;
+}
+.our-plants__btn {
+    background: none;
+    border: none;
+    color: var(--headers-color);
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+.indoor__img,.outdoor__img{
+    max-width:100%;
+         height:auto;
+}
