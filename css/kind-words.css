@@ -149,7 +149,7 @@
       max-width: 100%;
       min-width: 120px;
       width: 120px;
-      height: auto;
+      height: 120px;
    }
    .kind-words__container-text {
       display: flex;
