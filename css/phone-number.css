@@ -1,0 +1,39 @@
+.phone-number {
+  background: url(../img/kind-words-background.webp) 50% 50% / cover no-repeat,
+    var(--carousel-image-color);
+  min-width: 320px;
+}
+
+.phone-number__container {
+  background-color: var(--carousel-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 0;
+}
+.phone-number__text {
+  color: var(--btn-text);
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.phone-number__title {
+  color: var(--btn-text);
+  font-size: 48px;
+  text-align: center;
+}
+
+.phone-number__link {
+  color: var(--secondary-link-color);
+}
+
+@media (min-width: 768px) {
+  .phone-number__title {
+    font-size: 74px;
+  }
+  .phone-number__text {
+    font-size: 36px;
+    font-weight: 900;
+  }
+}
