@@ -60,6 +60,9 @@
   text-decoration: none;
   color: var(--btn-price-color);
 }
+.paragraph__info{
+    display: flex;
+}
 
 /* .address__map {
   margin-bottom: 10px;
