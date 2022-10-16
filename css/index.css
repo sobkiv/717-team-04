@@ -1,10 +1,12 @@
 @import url(common.css);
 @import url(contacts__information__form.css);
 @import url(header.css);
- @import url(footer.css);
-@import url(kind-words.css);
 @import url(kind-words.css);
 @import url(faq.css);
 @import url(best.css);
 @import url(footer.css);
 @import url(our-plants.css);
+@import url(features.css);
+@import url(phone-number.css);
+
+@import url(pricing.css)
