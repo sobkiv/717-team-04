@@ -1,9 +1,5 @@
 .our-plants {
-    /* display:flex;
-    flex-direction: column;
-    margin: 70px auto;
-    max-width: 320px; */
-    position: relative;
+    /* position: relative; */
     width: 100%;
     min-width: 320px;
     max-width: 1200px;
@@ -11,9 +7,7 @@
     font-weight: 400;
     font-size: 17px;
     margin: 70px 20px;
-    padding: 0 24px;
-
-
+    /* padding: 0 0px; */
 }
 .our-plants__about {
     text-align: center;
@@ -50,16 +44,23 @@
     margin-bottom:-1px ;
 }
 .indoor__item,.outdoor__item {
-width: 320px;
+width: 100%;
+margin-top: 20px;
+}
+.img__container {
+    min-width: 10%
 }
 .indoor__img,
 .outdoor__img {
-    height: 60vh;
-    width: 100%;
+    height: 69vh;
+    /* min-width: 200px;
+    max-width: 100%; */
+    width: 50vh;
     object-fit: cover;
-    object-position: 40% 40%;
+    object-position: 50% 50%;
     border-radius: 5px;
     margin-bottom: 20px;
+    margin: 20px 20px;;
 
 }
 
@@ -76,19 +77,27 @@ width: 320px;
     flex-wrap: wrap;
 }
 
-.indoor__item {
+.indoor__item,.outdoor__item{
     display: flex;
     justify-content:space-between;
-   
     flex-direction: column;
     text-align: left;
     
 }
-.indoor__title {
+.indoor__title,.outdoor__title {
     font-size: 22px;
     font-family: "Source Sans Pro", sans-serif;
     text-align: left;
     margin-bottom: 20px;
+}
+.indoor__text,.outdoor__text {
+    line-height: 1.5;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+    /* min-width: 103%; */
+    /* width: 100%; */
+    min-width: 320px;
+    
 }
 .our-plants__buttons {
     border-bottom:1px solid var(--our-plants-line-color);
