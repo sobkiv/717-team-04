@@ -1,3 +1,40 @@
-header {
+.header__banner {
     background: url("https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed8be96bebfe6002207efc0_optimized_1920.webp");
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header__empty-conteiner {
+    margin: -5 -10;
+
+}
+
+.header__logo-conteiner {
+
+}
+
+.header__logo-image {
+
+}
+
+.header__menu-container {
+
+}
+
+
+.header__menu {
+    display: flex;
+    margin: 0px -20px;
+}
+
+.header__menu-item {
+    display: flex;
+    font-size: 17px;
+    margin: 10px 20px;
 }
