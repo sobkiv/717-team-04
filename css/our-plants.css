@@ -1,31 +1,97 @@
 .our-plants {
-    display:flex;
+    /* display:flex;
     flex-direction: column;
+    margin: 70px auto;
+    max-width: 320px; */
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1200px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    margin: 70px 20px;
+    padding: 0 24px;
 
-}.our-plants__subtitle {
+
+}
+.our-plants__about {
+    text-align: center;
+}
+.our-plants__subtitle {
     font-size: 14px;
-    color: var( --subtitle-color);
+    color: var(--subtitle-color);
     font-weight: bold;
     letter-spacing: 3px;
+    margin-bottom: 25px;
 }
+
 .our-plants__title {
     font-size: 34px;
+    margin-bottom: 25px;
 }
+
 .our-plants__text {
     color: var(--headers-color);
     font-size: 18px;
+    margin-bottom: 25px;
 }
+
 .our-plants__btn {
     background: none;
     border: none;
+    border-bottom: 2px solid var(--btn-price-color);
     color: var(--headers-color);
     font-weight: bold;
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 3px;
-    padding: 10px;
+    padding: 15px 20px;
+    margin-bottom:-1px ;
 }
-.indoor__img,.outdoor__img{
-    max-width:100%;
-         height:auto;
+.indoor__item,.outdoor__item {
+width: 320px;
+}
+.indoor__img,
+.outdoor__img {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 40% 40%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+.our-plants__items {
+    /* max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.indoor__item {
+    display: flex;
+    justify-content:space-between;
+   
+    flex-direction: column;
+    text-align: left;
+    
+}
+.indoor__title {
+    font-size: 22px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.our-plants__buttons {
+    border-bottom:1px solid var(--our-plants-line-color);
+    /* padding-bottom: -100px; */
+    margin-bottom: 30px;
 }
