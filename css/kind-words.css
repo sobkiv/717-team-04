@@ -82,6 +82,7 @@
 }
 .kind-carousel-container {
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: center;
    background-color: var(--carousel-background-color);
@@ -98,6 +99,7 @@
    background-color: var(--kind-carousel-item-color);
 }
 .kind-carousel__img {
+   max-width: 200px;
    width: 80%;
    height: 50%;
 }
