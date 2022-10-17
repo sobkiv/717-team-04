@@ -7,22 +7,6 @@
     margin: auto;
 }
 
-.header__empty-conteiner {
-
-}
-
-.header__logo-conteiner {
-
-}
-
-.header__logo-image {
-
-}
-
-.header__menu-container {
-
-}
-
 .header__menu {
     display: flex;
     margin: 0px -20px;
@@ -34,9 +18,18 @@
     margin: 6px 20px;
 }
 
+.header__menu-item-hover:hover {
+    color: var(--subtitle-color);
+    text-decoration: underline;
+}
+
 .header__section {
-    background: url("https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed8be96bebfe6002207efc0_optimized_1920.webp");
-    padding: 260px 0px 290px 0px;
+    background: url("/img/banner-photo.webp");
+    padding: 260px 0px 310px 0px;
+    background-position: center;
+    background-size: cover;
+    background-position-x: -120.5px;
+
 }
 
 .header__banner-conteiner {
@@ -95,11 +88,6 @@
     margin-top: 58px;
 }
 
-.button-decoration {
-
-    
-}
-
 .header__banner-button-item1 {
     background-color: var(--btn-price-color);
     color: var(--btn-text);
@@ -130,7 +118,6 @@
 
 .header__banner-button-item2 {
     color: var(--header-text-color);
-    background-color: transparent;
     padding: 21px 33.5px;
     font-size: 12.1px;
     text-transform: uppercase;
@@ -155,5 +142,6 @@
         background-color: var(--header-text-color);
         transition-timing-function: ease-in;
         color: var(--btn-text);
+        border-color: var(--header-text-color);
     }
 }
