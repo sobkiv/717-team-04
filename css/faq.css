@@ -1,12 +1,25 @@
 .faq-container {
     display: flex;
     text-align: left;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 50px;
+    line-height: 50px;
+}
+
+.faq-image {
+    margin: 0%;
+    display: block;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
 }
 
 .faq-items {
     flex-direction: column;
     text-align: right;
-    
+    margin-left: 100px;
+    margin-right: 50px;
 }
 
 .faq-information {
@@ -38,6 +51,9 @@
     border-width: 1px;
     border-radius: 28px;
     border-style: solid;
+    cursor: pointer;
+    text-align: left;
+    padding: 12px 24px;
 }
 
 .faq-image {
