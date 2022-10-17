@@ -6,6 +6,7 @@
   padding: 90px 0;
   background-color: var(--another-background-color);
 }
+
 .plant__store {
   margin-top: 30px;
 }
@@ -49,16 +50,9 @@
   text-decoration: none;
   color: var(--btn-price-color);
 }
-.address__map iframe {
-  z-index: 3;
-  height: 100%;
-  width: 100%;
-  padding: 0px;
-  border-width: 0px;
-  margin: 0px;
-  left: 0px;
-  top: 0px;
-  touch-action: pan-x pan-y;
+
+.address__map {
+  margin-top: 30px;
 }
 
 .request__form {
@@ -114,32 +108,70 @@ input {
   width: 270px;
   height: 40px;
   padding: 10px;
-  margin-top: 56px;
+  margin-top: 48px;
   background-color: var(--btn-price-color);
   color: #fff;
   border: none;
   border-width: 1px;
   border-radius: 21px;
 }
-@media (min-width: 900px) {
+
+@media (min-width: 687px) {
   .contacts {
     display: flex;
     flex-wrap: nowrap;
-    gap: 30px;
-    width: auto;
-    min-width: 100%;
-  }
-  .contacts__information{
+    align-items: center;
     width: 100%;
-    margin: 0 50px;
   }
+
+  .contacts__information {
+    width: 100%;
+    margin: 0 10px;
+  }
+
   .contacts__form {
     width: 100%;
     width: 100%;
-    margin: 0 50px;
+    margin: 0 10px;
   }
-  .data {
+
+  input {
+    width: 400px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 900px) {
+  .contacts {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  .contacts__information {
+    width: 100%;
+    margin-left: 100px;
+  }
+
+  .contacts__form {
+    width: 100%;
+    width: 100%;
+    margin-right: 100px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    grid-column-gap: 50px;
+    margin-bottom: 30px;
+  }
+
+  input {
+    width: 400px;
+    margin-bottom: 24px;
+  }
+  #submit__button{
+    width: 400px;
+
   }
 }
