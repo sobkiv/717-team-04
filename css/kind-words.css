@@ -125,7 +125,7 @@
    .kind-words__items-subtitle {
       margin-top: 15px;
       max-width: 100%;
-      font-size: 36px;
+      font-size: 42px;
       line-height: 1.2;
    }
    .kind-words__element {
@@ -163,5 +163,7 @@
       font-size: 22px;
       font-weight: bold;
       line-height: 1.4;
+      margin-top: 5px;
+      margin-bottom: 10px;
    }
 }
