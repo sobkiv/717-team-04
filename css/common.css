@@ -44,3 +44,8 @@ a {
   text-decoration: none;
   color: var(--header-text-color);
 }
+
+.container {
+  max-width: 1075px;
+  margin: auto;
+}

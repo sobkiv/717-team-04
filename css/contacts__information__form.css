@@ -1,12 +1,11 @@
-.contacts{
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    max-width: 100%;
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  padding: 90px 0;
+  background-color: var(--another-background-color);
 }
-.contcts__top-text {
-}
-
 .plant__store {
   margin-top: 30px;
 }
@@ -50,37 +49,24 @@
   text-decoration: none;
   color: var(--btn-price-color);
 }
-.paragraph__info{
-    display: flex;
-}
-
-/* .address__map {
-  margin-bottom: 10px;
-  margin-top: 10px;
+.address__map iframe {
+  z-index: 3;
   height: 100%;
   width: 100%;
-  
-} */
-
-.map{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.map iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+  padding: 0px;
+  border-width: 0px;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  touch-action: pan-x pan-y;
 }
 
 .request__form {
   display: flex;
   flex-direction: column;
   width: auto;
-  max-width: 100%;
+  height: auto;
+  min-width: 100%;
   gap: 15px;
   align-items: center;
   margin: 10px;
@@ -100,6 +86,7 @@
 }
 
 .contacts__form {
+  margin-top: 50px;
   height: 100%;
   background: #ffffff;
   border-top: solid 3px #79a207;
@@ -128,47 +115,31 @@ input {
   height: 40px;
   padding: 10px;
   margin-top: 56px;
-  background-color: var(--text-color-phone);
+  background-color: var(--btn-price-color);
   color: #fff;
   border: none;
   border-width: 1px;
   border-radius: 21px;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .contacts {
     display: flex;
-    flex-direction: row;
-    gap: 50px;
-    max-width: 100%;
-    min-height: auto;
+    flex-wrap: nowrap;
+    gap: 30px;
+    width: auto;
+    min-width: 100%;
   }
-  .data__components {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  .contacts__information{
+    width: 100%;
+    margin: 0 50px;
   }
-  input {
-    width: 320px;
+  .contacts__form {
+    width: 100%;
+    width: 100%;
+    margin: 0 50px;
   }
-  #submit__button {
-    width: 320px;
-  }
-  .data{
+  .data {
     display: flex;
     justify-content: space-between;
-    gap: 150px;
-  }
-}
-@media (min-width: 826px) {
-  .contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  input {
-    width: 390px;
-  }
-  #submit__button {
-    width: 390px;
   }
 }
