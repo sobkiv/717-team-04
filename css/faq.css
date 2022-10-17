@@ -75,4 +75,11 @@
 
 .faq__text {
     color: var(--text-color);
+    line-height: 30px;
+}
+
+@media (min-width: 768px) {
+    .faq-container {
+        flex-direction: row;
+    }
 }
