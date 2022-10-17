@@ -1,3 +1,133 @@
-header {
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header__empty-conteiner {
+
+}
+
+.header__logo-conteiner {
+
+}
+
+.header__logo-image {
+
+}
+
+.header__menu-container {
+
+}
+
+.header__menu {
+    display: flex;
+    margin: 0px -20px;
+}
+
+.header__menu-item {
+    display: flex;
+    font-size: 17px;
+    margin: 6px 20px;
+}
+
+.header__section {
     background: url("https://res2.weblium.site/res/5ed0f79571a6c000211a3d8a/5ed8be96bebfe6002207efc0_optimized_1920.webp");
+    padding: 260px 0px 290px 0px;
+}
+
+.header__banner-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 40px;
+    align-items: center;
+}
+
+.header__banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 15px;
+    max-width: 50%;
+    flex-basis: 50%;
+    margin: auto;
+    max-width: 600px;
+}
+
+.header__empty-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 15px;
+    max-width: 50%;
+    flex-basis: 50%;
+    max-width: 600px;
+    
+}
+
+.header__subtitle {
+    font-size: 14px;
+    color: var(--subtitle-color);
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    margin-top: 1px;
+}
+
+.header__title {
+    margin-top: 16px;
+    font-size: 74px;
+    color: var(--headers-color);
+    line-height: 81.4px;
+}
+
+.header__paragraph {
+    margin-top: 15px;
+    color: var(--header-text-color);
+    font-size: 18px;
+    line-height: 28.08px;
+}
+
+.header__banner-buttons {
+    margin-top: 16px;
+    margin-top: 40px;
+}
+
+.button-decoration {
+
+    
+}
+
+.header__banner-button-item1 {
+    background-color: var(--btn-price-color);
+    color: var(--btn-text);
+    padding: 18px 34px;
+    font-size: 12.1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    border-radius: 28px;
+}
+
+.header__banner-button-item2 {
+    color: var(--header-text-color);
+    background-color: transparent;
+    padding: 18px 34px;
+    font-size: 12.1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+
+}
+
+.header__banner-button-border {
+    border-width: 1px;
+    border-radius: 28px;
+    color: var(--header-text-color);
+    border-style: solid;
+    width: 100%;
+    height: 100%;
 }
