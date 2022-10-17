@@ -1,43 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    font-family: 'Source Sans Pro', sans-serif;
-    --btn-price-color:#79a207;
-    --subtitle-color:#79a207;
-    --headers-color: #0d3c00;
-    --header-text-color:#191c18;
-    --text-color:#707070;
-    --btn-text:#FFFFFF;
-    --background-color:rgb(236,210,160);
-    --another-background-color:#faf5f2;
-    --carousel-item-color: rgba(121, 162, 7, 0.23);
-    --carousel-image-color: rgb(13, 60, 0);
-    --carousel-background-color: rgba(13, 60, 0, 0.99);
-    --kind-carousel-item-color: rgb(14, 55, 3);
+  font-family: "Source Sans Pro", sans-serif;
+  --btn-price-color: #79a207;
+  --subtitle-color: #79a207;
+  --headers-color: #0d3c00;
+  --header-text-color: #191c18;
+  --text-color: #707070;
+  --btn-text: #ffffff;
+  --secondary-link-color: #ecd2a0;
+  --background-color: rgb(236, 210, 160);
+  --another-background-color: #faf5f2;
+  --carousel-item-color: rgba(121, 162, 7, 0.23);
+  --carousel-image-color: rgb(13, 60, 0);
+  --carousel-background-color: rgba(13, 60, 0, 0.99);
+  --kind-carousel-item-color: rgb(14, 55, 3);
+  --our-plants-line-color:#eff4e1;
 }
 
 img {
-    display: block;
-}
- 
-h1,h2,h3 {
-    color: var(--headers-color);
-    font-family:Lora, serif;
-    
+  display: block;
 }
 
-p{
-   color:var(--text-color);
+h1,
+h2,
+h3 {
+  color: var(--headers-color);
+  font-family: Lora, serif;
 }
 
-a{
-    text-decoration: none;
-    color:var(--header-text-color);
+p {
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--header-text-color);
 }
