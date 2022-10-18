@@ -153,7 +153,7 @@
         border-color: var(--header-text-color);
     }
 }
-/* 
+
 @media (min-width: 992px) {
     .header__section {
         background-position: ;
@@ -163,4 +163,4 @@
 
 @media (min-width: 768px) {
 
-} */
+}
