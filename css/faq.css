@@ -71,11 +71,13 @@
     color: var(--header-text-color);
     font-weight: 700;
     text-align: left;
+    font-size: 24px;
 }
 
 .faq__text {
-    color: var(--text-color);
+    color: var(--header-text-color);
     line-height: 30px;
+    font-size: 17px;
 }
 
 @media (min-width: 768px) {
