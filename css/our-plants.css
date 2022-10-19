@@ -66,13 +66,6 @@ margin-top: 20px;
     
 }
 
-.indoor__item,.outdoor__item{
-    /* display: flex;
-    justify-content:space-between;
-    flex-direction: column;
-    text-align: left; */
-    
-}
 .indoor__title,.outdoor__title {
     font-size: 22px;
     font-family: "Source Sans Pro", sans-serif;
