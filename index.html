@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants Shop Website Template Demo</title>
     <link rel="shortcut icon" href="img/plant-site-logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -16,28 +16,23 @@
     <header class="header">
         <nav class="header__navigation">
             <div class="header__logo-conteiner">
-                <a href="/" class="header__logo-link"><img width="162" height="auto" src="img/logo-header.svg"
-                        class="header__logo-image" alt="Plants logo"></a>
+                <a href="https://koldovsky.github.io/717-team-04/#" class="header__logo-link"><img width="162" src="img/logo-header.svg" class="header__logo-image" alt="Plants logo"></a>
             </div>
-            <div class="header__empty-conteiner"></div>
+            <div class="header__burger-menu-wraper">
+                <div class="header__burger-menu">
+                    <span class="header__burger-menu-item"></span>
+                </div>
+            </div>
             <!-- Burger menu -->
             <div class="header__menu-conteiner">
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-item-hover" href="#about-us">About us</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover" href="#plants">Plants</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover" href="#pick">Pick of the Month</a>
-                    </li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover" href="#pricing">Pricing</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover"
-                            href="#testimonials">Testimonials</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover" href="#contact-us">Contact us</a>
-                    </li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#about-us">About us</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#plants">Plants</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#pick">Pick of the Month</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#pricing">Pricing</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#testimonials">Testimonials</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#contact-us">Contact us</a></li>
                 </ul>
-            </div>
-            <div class="header__burger-menu">
-                <span class="header__burger-menu-item"></span>
-                <span class="header__burger-menu-item"></span>
-                <span class="header__burger-menu-item"></span>
             </div>
         </nav>
         <div class="header__section">
@@ -46,13 +41,12 @@
                     <span class="header__subtitle">―PLANTLAND―</span>
                     <h1 class="header__title">Make Your Home Green</h1>
                     <p class="header__paragraph">Check out our store in New York with the best indoor & outdoor plants
-                        that are
-                        suitable for growing exactly in your conditions.</p>
+                        that are suitable for growing exactly in your conditions.</p>
                     <div class="header__banner-buttons">
-                        <a id="header__banner-button-item1-anim" class="header__banner-button-item1" href="#pick">Best
-                            Plants</a>
-                        <a id="header__banner-button-item2-anim" class="header__banner-button-item2"
-                            href="#about-us">Learn more</a>
+                        <div class="header__button-wrapper"><a id="header__banner-button-item1-anim"
+                                class="header__banner-button-item1" href="#pick">Best Plants</a></div>
+                        <div class="header__button-wrapper"><a id="header__banner-button-item2-anim"
+                                class="header__banner-button-item2" href="#about-us">Learn more</a></div>
                     </div>
                 </div>
                 <div class="header__empty-banner"> </div>
@@ -192,107 +186,107 @@
         <!-- Iryna Rolinska  -->
         <!--Smola Kateryna-->
         <section id="plants" class="our-plants">
-            <div class="container">
-                <div class="our-plants__about">
-                    <p class="our-plants__subtitle">―WHAT WE OFFER―</p>
-                    <h2 class="our-plants__title">Our Plants</h2>
-                    <p class="our-plants__text">We sell both indoor and outdoor varieties of plants.</p>
-                    <div class="our-plants__buttons">
-                        <button type="button" class="our-plants__btn">INDOOR</button>
-                        <button type="button" class="our-plants__btn">OUTDOOR</button>
-                    </div>
-                    <div class="our-plants__items">
-                        <div class="indoor__item">
-                            <div class="img__container">
-                                <img src="img/indoor-item1.png" alt="Small Ornamental Plants" class="indoor__img">
-                            </div>
-                            <h3 class="indoor__title">Small Ornamental Plants</h3>
-                            <p class="indoor__text">Such plants will fit on any windowsill, decorate your home or work
-                                table.
-                                Chlorophytum, money plants, aglaonema are not demanding in care but very beautiful.</p>
-                        </div>
-                        <div class="indoor__item">
-                            <div class="img__container">
-                                <img src="img/indoor-item2.png" alt="Indoor Trees" class="indoor__img">
-                            </div>
-                            <h3 class="indoor__title">Indoor Trees</h3>
-                            <p class="indoor__text">It's a beautiful and original option for a large room. A small
-                                indoor
-                                tree
-                                will add some zest to the office or a large living room. Large dracaena, ficus, alocasia
-                                will be
-                                a great option for your space.</p>
-                        </div>
-                        <div class="indoor__item">
-                            <div class="img__container">
-                                <img src="img/indoor-item3.png" alt="Plants in Florarium" class="indoor__img">
-                            </div>
-                            <h3 class="indoor__title">Plants in Florarium</h3>
-                            <p class="indoor__text">These are neatly planted compositions of succulents, grassroots,
-                                decorative
-                                ferns. Plants are selected so that they are in perfect harmony. Order your unique set of
-                                plants!
-                            </p>
-                        </div>
-                        <div class="indoor__item">
-                            <div class="img__container">
-                                <img src="img/indoor-item4.png" alt="Big Ornamental Plants" class="indoor__img">
-                            </div>
-                            <h3 class="indoor__title">Big Ornamental Plants</h3>
-                            <p class="indoor__text">Charming pachypodium, yucca, monstera will become a stunning
-                                decoration
-                                of
-                                your room or office. These plants will make a great impression on your guests.</p>
-                        </div>
-                        <div class="outdoor__item">
-                            <div class="img__container">
-                                <img src="img/outdoor-item1.png" alt="Outdoor Flowers" class="outdoor__img">
-                            </div>
-                            <h3 class="outdoor__title">Outdoor Flowers</h3>
-                            <p class="outdoor__text">Flowers form the basis of the exterior and are the first to catch
-                                the
-                                eye.
-                                Charming anemones, freesia, lilies will provide brightness and a pleasant aroma. Choose
-                                your
-                                outdoor flower! </p>
-                        </div>
-                        <div class="outdoor__item">
-                            <div class="img__container">
-                                <img src="img/outdoor-item2.png" alt="Succulents" class="outdoor__img">
-                            </div>
-                            <h3 class="outdoor__title">Succulents</h3>
-                            <p class="outdoor__text">Succulents do not require constant care, perfectly take root in any
-                                yard,
-                                look nice, and stylish. We will help you to create the optimal composition of succulents
-                                in
-                                your
-                                garden.</p>
-                        </div>
-                        <div class="outdoor__item">
-                            <div class="img__container">
-                                <img src="img/outdoor-item3.png" alt="Decorative Moss" class="outdoor__img">
-                            </div>
-                            <h3 class="outdoor__title">Decorative Moss</h3>
-                            <p class="outdoor__text">Decorative moss and lichen will make the garden truly special.
-                                Thanks
-                                to
-                                their density, coloring, and appearance, you can create a unique picture on the site.
-                            </p>
-                        </div>
-                        <div class="outdoor__item">
-                            <div class="img__container">
-                                <img src="img/outdoor-item4.png" alt="Decorative Conifers" class="outdoor__img">
-                            </div>
-                            <h3 class="outdoor__title">Decorative Conifers</h3>
-                            <p class="outdoor__text">The real decoration of any yard is decorative coniferous trees.
-                                Thuja,
-                                mountain pines, cedar pines will charm anyone! These are unpretentious, but very
-                                beautiful
-                                trees.</p>
-                        </div>
 
-                    </div>
+            <div class="our-plants__about">
+                <p class="our-plants__subtitle">―WHAT WE OFFER―</p>
+                <h2 class="our-plants__title">Our Plants</h2>
+                <p class="our-plants__text">We sell both indoor and outdoor varieties of plants.</p>
+                <div class="our-plants__buttons">
+                    <button type="button" class="our-plants__btn">INDOOR</button>
+                    <button type="button" class="our-plants__btn">OUTDOOR</button>
                 </div>
+                <div class="our-plants__items">
+                    <div class="indoor__item">
+                        <div class="img__container">
+                            <img src="img/indoor-item1.png" alt="Small Ornamental Plants" class="indoor__img">
+                        </div>
+                        <h3 class="indoor__title">Small Ornamental Plants</h3>
+                        <p class="indoor__text">Such plants will fit on any windowsill, decorate your home or work
+                            table.
+                            Chlorophytum, money plants, aglaonema are not demanding in care but very beautiful.</p>
+                    </div>
+                    <div class="indoor__item">
+                        <div class="img__container">
+                            <img src="img/indoor-item2.png" alt="Indoor Trees" class="indoor__img">
+                        </div>
+                        <h3 class="indoor__title">Indoor Trees</h3>
+                        <p class="indoor__text">It's a beautiful and original option for a large room. A small
+                            indoor
+                            tree
+                            will add some zest to the office or a large living room. Large dracaena, ficus, alocasia
+                            will be
+                            a great option for your space.</p>
+                    </div>
+                    <div class="indoor__item">
+                        <div class="img__container">
+                            <img src="img/indoor-item3.png" alt="Plants in Florarium" class="indoor__img">
+                        </div>
+                        <h3 class="indoor__title">Plants in Florarium</h3>
+                        <p class="indoor__text">These are neatly planted compositions of succulents, grassroots,
+                            decorative
+                            ferns. Plants are selected so that they are in perfect harmony. Order your unique set of
+                            plants!
+                        </p>
+                    </div>
+                    <div class="indoor__item">
+                        <div class="img__container">
+                            <img src="img/indoor-item4.png" alt="Big Ornamental Plants" class="indoor__img">
+                        </div>
+                        <h3 class="indoor__title">Big Ornamental Plants</h3>
+                        <p class="indoor__text">Charming pachypodium, yucca, monstera will become a stunning
+                            decoration
+                            of
+                            your room or office. These plants will make a great impression on your guests.</p>
+                    </div>
+                    <div class="outdoor__item">
+                        <div class="img__container">
+                            <img src="img/outdoor-item1.png" alt="Outdoor Flowers" class="outdoor__img">
+                        </div>
+                        <h3 class="outdoor__title">Outdoor Flowers</h3>
+                        <p class="outdoor__text">Flowers form the basis of the exterior and are the first to catch
+                            the
+                            eye.
+                            Charming anemones, freesia, lilies will provide brightness and a pleasant aroma. Choose
+                            your
+                            outdoor flower! </p>
+                    </div>
+                    <div class="outdoor__item">
+                        <div class="img__container">
+                            <img src="img/outdoor-item2.png" alt="Succulents" class="outdoor__img">
+                        </div>
+                        <h3 class="outdoor__title">Succulents</h3>
+                        <p class="outdoor__text">Succulents do not require constant care, perfectly take root in any
+                            yard,
+                            look nice, and stylish. We will help you to create the optimal composition of succulents
+                            in
+                            your
+                            garden.</p>
+                    </div>
+                    <div class="outdoor__item">
+                        <div class="img__container">
+                            <img src="img/outdoor-item3.png" alt="Decorative Moss" class="outdoor__img">
+                        </div>
+                        <h3 class="outdoor__title">Decorative Moss</h3>
+                        <p class="outdoor__text">Decorative moss and lichen will make the garden truly special.
+                            Thanks
+                            to
+                            their density, coloring, and appearance, you can create a unique picture on the site.
+                        </p>
+                    </div>
+                    <div class="outdoor__item">
+                        <div class="img__container">
+                            <img src="img/outdoor-item4.png" alt="Decorative Conifers" class="outdoor__img">
+                        </div>
+                        <h3 class="outdoor__title">Decorative Conifers</h3>
+                        <p class="outdoor__text">The real decoration of any yard is decorative coniferous trees.
+                            Thuja,
+                            mountain pines, cedar pines will charm anyone! These are unpretentious, but very
+                            beautiful
+                            trees.</p>
+                    </div>
+
+                </div>
+
             </div>
         </section>
         <!--Smola Kateryna-->
@@ -309,43 +303,49 @@
                     <p class="faq__text">We are happy to answer any questions! Come to our store or leave your question
                         in the contact form!</p>
                 </div>
-                <div class="accordion accordion-flush" id="accordion-faq">
-                    <div class="accordion-item">
+                <div class="accordion accordion-flush " id="accordion-faq">
+                    <div class="accordion-item ">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
                                 Do you sell trees?
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                            data-bs-parent="#accordion-faq">
-                            <div class="accordion-body">Yes, in our store, you can buy decorative trees for the garden</div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordion-faq">
+                            <div class="accordion-body">Yes, in our store, you can buy decorative trees for the garden
+                            </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
                                 Can I buy already grown-up plants?
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                            data-bs-parent="#accordion-faq">
-                            <div class="accordion-body">Of course, we have a large greenhouse where we grow plants. You can buy an
-                            adult plant in a pot.</div>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordion-faq">
+                            <div class="accordion-body">Of course, we have a large greenhouse where we grow plants. You
+                                can buy an
+                                adult plant in a pot.</div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
                                 Can I buy plants online?
                             </button>
                         </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                            data-bs-parent="#accordion-faq">
-                            <div class="accordion-body">No, we don't have an online store. To buy a plant, come to our offline store
-                            or leave us a message.</div>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordion-faq">
+                            <div class="accordion-body">No, we don't have an online store. To buy a plant, come to our
+                                offline store
+                                or leave us a message.</div>
                         </div>
                     </div>
                 </div>
@@ -722,12 +722,13 @@
                     <div class="contacts__phone row">
                         <h3 class="layout">Contacts</h3>
                         <p class="phone__number paragraph__info">
-                           <span><a class="tel" href="tel:+12345678900">+12345678900</a></span> <br> 
-                            <span><a class="e-mail" href="#">plantland@email.com</a></span> 
+                            <span><a class="tel" href="tel:+12345678900">+12345678900</a></span> <br>
+                            <span><a class="e-mail" href="#">plantland@email.com</a></span>
                         </p>
                     </div>
                     <div class="address__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43847.967315901034!2d32.69330564542253!3d46.61692371331511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c40f4fd0435167%3A0x956f17dbb71c1666!2z0JDQotCRLdCc0LDRgNC60LXRgg!5e0!3m2!1sru!2sde!4v1665045313951!5m2!1sru!2sde"
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43847.967315901034!2d32.69330564542253!3d46.61692371331511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c40f4fd0435167%3A0x956f17dbb71c1666!2z0JDQotCRLdCc0LDRgNC60LXRgg!5e0!3m2!1sru!2sde!4v1665045313951!5m2!1sru!2sde"
                             style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -758,7 +759,6 @@
             <div class="footer__logo-conteiner">
                 <img width="150" src="img/logo-footer.svg" class="footer__logo-image" alt="Plants logo">
             </div>
-            <!-- Burger menu -->
             <div class="footer__menu-conteiner">
                 <ul class="footer__menu">
                     <li class="footer__menu-item"><a href="#about-us">About us</a></li>
@@ -770,9 +770,9 @@
                 </ul>
             </div>
         </nav>
-        <div class="rigths">
-            <p>© Created by </p>
-            <p>All rights Reserved</p>
+        <div class="footer__copyright">
+            <p class="footer__owner">© Created by </p>
+            <p class="footer__rights">All rights Reserved</p>
         </div>
     </footer>
     <!-- Pavlo Sobkiv-->

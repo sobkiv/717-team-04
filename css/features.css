@@ -21,6 +21,8 @@
 .features__info-subtitle {
   margin: 10px 0px;
   font-size: 34px;
+  font-family: Lora, serif;
+  font-weight: 700;
 }
 .features__info-description {
   margin: 10px 0px;
