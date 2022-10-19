@@ -269,7 +269,29 @@
 
     .header__menu-item-hover:hover {
         color: var(--subtitle-color);
-        text-decoration: underline;
+        position: relative;
+    }
+
+    .header__menu-item-underline:hover {
+        background-color: var(--subtitle-color);
+        display: flex;
+        flex-direction: column-reverse;
+        top: 20px;
+        height: 2px;
+        width: 0%;
+        content: " ";
+        animation-name: underline-items;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+    }
+
+    @keyframes underline-items {
+        0% {}
+
+        100% {
+            width: 100%;
+        }
     }
 }
 
