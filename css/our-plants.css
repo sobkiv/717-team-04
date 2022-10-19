@@ -26,6 +26,7 @@
     font-size: 18px;
     margin-bottom: 25px;
     text-align: center;
+
 }
 
 .our-plants__btn {
@@ -45,14 +46,12 @@ width: 100%;
 margin-top: 20px;
 }
 .img__container {
-    min-width: 10%
+   width: 100%;
+   margin: -19px;;
 }
 .indoor__img,
 .outdoor__img {
-    height: 69vh;
-    width: 50vh;
-    object-fit: cover;
-    object-position: 50% 50%;
+    width: 100%;
     border-radius: 5px;
     margin-bottom: 20px;
     margin: 20px 20px;;
@@ -79,14 +78,14 @@ margin-top: 20px;
     font-family: "Source Sans Pro", sans-serif;
     text-align: left;
     margin-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 8px;
 }
 .indoor__text,.outdoor__text {
     line-height: 1.5;
     word-spacing: 3px;
     margin-bottom: 20px;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 8px;
     
 }
 .our-plants__buttons {
