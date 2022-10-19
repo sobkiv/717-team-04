@@ -93,6 +93,7 @@
 .header__title {
     font-size: 48px;
     color: var(--headers-color);
+    font-weight: 700;
     line-height: 52.8px;
     margin-top: 21px;
 }
