@@ -22,7 +22,11 @@
   --carousel-image-color: rgb(13, 60, 0);
   --carousel-background-color: rgba(13, 60, 0, 0.99);
   --kind-carousel-item-color: rgb(14, 55, 3);
-  --our-plants-line-color:#eff4e1;
+  --our-plants-line-color: #eff4e1;
+  --bs-font-sans-serif: "Source Sans Pro", sans-serif;
+  --bs-accordion-btn-focus-border-color: white;
+  --bs-accordion-active-bg: white;
+  --bs-accordion-active-color: white;
 }
 
 img {

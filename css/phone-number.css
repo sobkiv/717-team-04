@@ -22,6 +22,7 @@
   color: var(--btn-text);
   font-size: 48px;
   text-align: center;
+  font-weight: 700;
 }
 
 .phone-number__link {
