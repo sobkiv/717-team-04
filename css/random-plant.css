@@ -1,0 +1,8 @@
+.plant-today__title{
+  text-transform: uppercase;
+  color: var(--subtitle-color);
+  margin: 10px 0px;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+}
