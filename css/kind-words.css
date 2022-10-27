@@ -50,7 +50,6 @@
    max-width: 100%;
    width: 70px;
    height: 70px;
-   /* object-fit: cover; */
 }
 .kind-words__container-text {
    display: flex;
@@ -77,6 +76,8 @@
    height: auto;
 }
 .kind-carousel {
+   display: flex;
+   justify-content: center;
    min-width: 320px;
    font-size: 17px;
    line-height: 1.5;
@@ -88,6 +89,7 @@
    align-items: center;
    justify-content: center;
    background-color: var(--carousel-background-color);
+   width: 100%;
 }
 .kind-carousel__item {
    display: flex;
