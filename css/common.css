@@ -24,6 +24,9 @@
   --kind-carousel-item-color: rgb(14, 55, 3);
   --our-plants-line-color: #eff4e1;
   --bs-font-sans-serif: "Source Sans Pro", sans-serif;
+  --bs-accordion-btn-focus-border-color: white;
+  --bs-accordion-active-bg: white;
+  --bs-accordion-active-color: white;
 }
 
 img {
