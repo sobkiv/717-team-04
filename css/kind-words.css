@@ -121,13 +121,13 @@
       line-height: 25.5px;
       padding: 0 40px 140px 50px;
    }
-.kind-words__info, 
-.kind-words__items {
-   max-width: 570px;
-}
+   .kind-words__info, 
+   .kind-words__items {
+      max-width: 570px;
+   }
    .kind-words__items-title {
       font-size: 14px;
-      letter-spacing: 1.5;
+      letter-spacing: 1.5px;
       line-height: normal;
    }
    .kind-words__items-subtitle {
