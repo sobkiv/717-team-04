@@ -1,0 +1,50 @@
+.plant-today__title{
+  text-transform: uppercase;
+  color: var(--subtitle-color);
+  margin: 50px 0px;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+}
+.plant-today{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+}
+
+.plant-today__randomizer-container{
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+  background-color: var(--carousel-background-color);
+  padding: 5px 8px;
+  border-radius: 50px;
+  width: 280px;
+}
+.random-plant{
+  font-size: 18px;
+  margin: 3px 8px;
+  color:  var(--kind-carousel-item-color);
+}
+.plant-today__randomise-button{
+  transition: linear all 0.15s;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0px;
+  border-radius: 50%;
+  width: 36px;
+  font-size: 24px;
+}
+
+.plant-today__randomise-button:hover{
+  background-color: rgba(255, 255, 255, 0.17);
+}
+
+.plant-today__output-box{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  margin-right: 10px;
+  width: 85%;
+}
+
