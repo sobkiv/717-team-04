@@ -1,15 +1,12 @@
 .about-us {
-    min-width: 370px;
+    min-width: 320px;
 }
+
 .photo__about-us {
     margin-top: 80px;
     margin-right: 40px;
 }
-.about-us__about {
-    display: flex;
-    width: 100%;
-    flex-shrink: 1;
-}
+
 .about-us__subtitle {
     color: #79a207;
     text-align: left;
@@ -19,6 +16,7 @@
     margin-left: 40px;
     padding: 15px;
 }
+
 .about-us__title {
     font-size: 42px;
     color: #0d3c00;
@@ -26,11 +24,13 @@
     margin-left: 55px;
     padding-right: 15px;
 }
+
 .about-us__info {
     font-size: 17px;
     padding: 15px;
     margin-left: 40px;
 }
+
 .about-us__offer {
     font-size: 15px;
     font-weight: 400;
@@ -39,6 +39,7 @@
     margin-left: 50px;
     padding: 10px;
 }
+
 .about-us__browse {
     color: white;
     background-color: var(--btn-price-color);
@@ -48,7 +49,9 @@
     padding: 12px 24px;
     margin-left: 50px;
     margin-right: 500px;
+
 }
+
 .carousel-about {
     display: flex;
     flex-direction: column;
@@ -67,45 +70,60 @@
     border-top-color: var(--btn-price-color);
     box-shadow: 5px 5px 5px rgb(240, 236, 233);
 }
+
 .about-us__carousel {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 15px;
 }
+
 .svg__about-us {
     background-color: var(--carousel-item-color);
     border-radius: 50%;
     color: #79a207;
 }
+
 .about-us__carousel__title {
     color: rgb(0, 48, 3);
     font-size: 20px;
     font-weight: bolder;
     font-weight: 900;
 }
+
 .about-us__carousel__info {
     color: rgb(91, 95, 91);
 }
+
+.about-us__carousel__item {
+    display: flex;
+    justify-content: center;
+    background-color: #79a207;
+    border-radius: 50%;
+    color: #0d3c00;
+    width: 100px;
+}
+
+.kind-carousel-prev,
+.kind-carousel-next {
+    display: flex;
+    border-radius: 50%;
+    background-color: #79a207
+}
+
 @media (min-width: 320px) {
-    .about-us__about {
-        display: flex;
-        flex-direction: column;
-    }
-    .photo__about-us {
-        width: 344px;
-    }
     .about-us__carousel {
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
     }
 }
-@media(min-width:800px) {
+
+@media(min-width:768px) {
     .about-us__about {
         display: flex;
-        flex-direction: row;
-
+        justify-content: space-around;
     }
+
     .about-us__carousel {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -114,10 +132,11 @@
         align-items: center;
     }
 }
-@media(min-width:1000px) {
+
+@media(min-width:992px) {
     .about-us__carousel {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
         justify-items: center;
         align-items: center;
