@@ -1,3 +1,137 @@
+.header__music-conteiner {
+    position: relative;
+    left: 21px;
+    top: 25px;
+    margin-bottom: -150px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.music-container {
+    background-color: #fff;
+    border-radius: 28px;
+    box-shadow: 0px 0px 0px 0px var(--text-color);
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0;
+    z-index: 10;
+    
+}
+
+.img-container {
+    position: relative;
+    width: 110px;
+}
+
+.img-container::after {
+    content: '';
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, 50%);
+}
+
+.img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: rotate 3s linear infinite;
+
+    animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn {
+    background-color: #fff;
+    border: 0;
+    color: #dfdbdf;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.action-btn.action-btn-big {
+    color: var(--btn-price-color);
+    font-size: 30px;
+}
+
+.action-btn:focus {
+    outline: 0;
+}
+
+.music-info {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 28px 28px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 150px;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: 0;
+}
+
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.music-info h4 {
+    margin: 0;
+}
+
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+
+.progress {
+    background-color: rgb(236, 210, 160);
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+/* Music player end */
+
 .header__navigation {
     position: relative;
     top: 0px;
@@ -35,7 +169,6 @@
     position: absolute;
     height: 2px;
     width: 100%;
-    
 }
 
 .header__burger-menu::before {
@@ -53,7 +186,6 @@
     height: 2px;
     width: 100%;
     content: " ";
-    bottom: 0px;
 }
 
 /* burger menu and*/
@@ -65,6 +197,7 @@
     min-width: auto;
     min-height: auto;
     display: flex;
+    flex-direction: column-reverse;
 }
 
 .header__banner-conteiner {
@@ -73,6 +206,8 @@
     padding: 0px 24px;
     align-items: center;
     margin: 130px 0px;
+    position: relative;
+    top: 30px;
 }
 
 .header__banner {
@@ -135,6 +270,8 @@
 }
 
 #header__banner-button-item1-anim:hover {
+    background-color: var(--btn-price-color);
+    color: var(--btn-text);
     animation-name: to-darker-color;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -145,6 +282,7 @@
 
     100% {
         background-color: var(--headers-color);
+        color: #fff;
         transition-timing-function: ease-in;
     }
 }
@@ -162,6 +300,7 @@
 }
 
 #header__banner-button-item2-anim:hover {
+    color: var(--header-text-color);
     animation-name: to-black-color;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -179,9 +318,10 @@
 }
 
 @media (min-width: 587px) {
-        .header__banner-conteiner {
-            max-width: 550px;
-        }
+    .header__banner-conteiner {
+        max-width: 550px;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -192,6 +332,16 @@
         min-width: auto;
         min-height: 916px;
         display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .header__music-conteiner {
+        position: relative;
+        top: -50px;
+        left: 21px;
+        margin-bottom: -150px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header__banner-conteiner {
@@ -200,6 +350,8 @@
         padding: 0px 15px;
         align-items: center;
         max-width: 65%;
+        position: relative;
+        top: -30px;
     }
 
     .header__banner {
@@ -210,7 +362,7 @@
         max-width: 600px;
         margin: auto;
     }
-    
+
     .header__navigation {
         padding: 0px 32px;
     }
@@ -220,13 +372,24 @@
         line-height: 71.5px;
     }
 
-} 
+}
 
 @media (min-width: 992px) {
 
     .header__section {
-            background-position: 30% 50%;
-    } 
+        background-position: 30% 50%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__music-conteiner {
+        position: relative;
+        display: block;
+        left: -40px;
+        top: 0px;
+
+    }
+
 
     .header__title {
         font-size: 74px;
@@ -244,23 +407,26 @@
 
     .header__banner-conteiner {
         padding: 0px 22px;
+        margin-top: 300px;
+        position: relative;
+        top: -80px;
     }
 
     .header__burger-menu-wraper {
         position: absolute;
         left: -10000px;
     }
-    
+
     .header__menu-conteiner {
         position: relative;
         left: 0px;
     }
-    
+
     .header__menu {
         display: flex;
         margin: 0px -20px;
     }
-    
+
     .header__menu-item {
         display: flex;
         font-size: 17px;
@@ -276,7 +442,7 @@
         background-color: var(--subtitle-color);
         display: flex;
         flex-direction: column-reverse;
-        top: 20px;
+        top: 23px;
         height: 2px;
         width: 0%;
         content: " ";
@@ -296,14 +462,21 @@
 }
 
 @media (min-width: 1268px) {
-    
+
+    .header__music-conteiner {
+        position: relative;
+        left: 380px;
+    }
+
     .header__section {
         justify-content: center;
-        background-position: 20% 50%;
+        background-position: 32% 50%;
     }
 
     .header__banner-conteiner {
+        position: absolute;
         min-width: 1200px;
+        top: 50px;
     }
 
     .header__banner {
@@ -313,9 +486,9 @@
     }
 }
 
-@media (max-width: 225px) { 
-    
-    .header__banner-button-item1{
+@media (max-width: 225px) {
+
+    .header__banner-button-item1 {
         margin-right: 0px;
     }
 
