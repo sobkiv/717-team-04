@@ -17,6 +17,7 @@
     position: relative;
     margin: 100px 0;
     z-index: 10;
+    
 }
 
 .img-container {
@@ -168,7 +169,6 @@
     position: absolute;
     height: 2px;
     width: 100%;
-
 }
 
 .header__burger-menu::before {
@@ -186,7 +186,6 @@
     height: 2px;
     width: 100%;
     content: " ";
-    bottom: 0px;
 }
 
 /* burger menu and*/
@@ -271,6 +270,8 @@
 }
 
 #header__banner-button-item1-anim:hover {
+    background-color: var(--btn-price-color);
+    color: var(--btn-text);
     animation-name: to-darker-color;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -281,6 +282,7 @@
 
     100% {
         background-color: var(--headers-color);
+        color: #fff;
         transition-timing-function: ease-in;
     }
 }
@@ -298,6 +300,7 @@
 }
 
 #header__banner-button-item2-anim:hover {
+    color: var(--header-text-color);
     animation-name: to-black-color;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -439,7 +442,7 @@
         background-color: var(--subtitle-color);
         display: flex;
         flex-direction: column-reverse;
-        top: 20px;
+        top: 23px;
         height: 2px;
         width: 0%;
         content: " ";
