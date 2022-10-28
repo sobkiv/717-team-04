@@ -1,16 +1,8 @@
-(function () {
-  let plants = [
-    "Cactus",
-    "Palm",
-    "Orchid",
-    "Grass",
-    "Tomato bush",
-    "Ficus",
-    "ඞ",
-    "Aloe",
-    "Moss",
-    "Bamboo"
-  ];
+(async function () {
+  
+  const response = await fetch('api/plants-data.json')
+  const plants = await response.json()
+
   const plantOutput = document.querySelector('.random-plant');
   const activationButton = document.querySelector('.plant-today__randomise-button')
 
