@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants Shop Website Template Demo</title>
     <link rel="shortcut icon" href="img/plant-site-logo.png" type="image/x-icon">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
     <link rel="stylesheet" href="css/index.css">
+    
 </head>
-
+ 
 <body>
     <!-- Pavlo Sobkiv -->
     <header class="header">
@@ -51,15 +54,38 @@
                 </div>
                 <div class="header__empty-banner"> </div>
             </div>
+            <div class="header__music-conteiner">
+                <div class="music-container" id="music-container">
+                  <div class="music-info">
+                    <h4 id="title"></h4>
+                    <div class="progress-container" id="progress-container">
+                      <div class="progress" id="progress"></div>
+                    </div>
+                  </div>
+                  <audio src="music/ukulele.mp3" id="audio"></audio>
+                  <div class="img-container">
+                    <img src="img\header-music-player\ukulele.png" alt="music-cover" id="cover" />
+                  </div>
+                  <div class="navigation">
+                    <button id="prev" class="action-btn">
+                      <i class="fas fa-backward"></i>
+                    </button>
+                    <button id="play" class="action-btn action-btn-big">
+                      <i class="fas fa-play"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                      <i class="fas fa-forward"></i>
+                    </button>
+                  </div>
+                </div>
+            </div>
         </div>
     </header>
     <!-- Pavlo Sobkiv -->
     <main>
         <!-- Iryna Rolinska  -->
-
         <section class="about-us" id="about-us">
             <div class="about-us__about" id="about-us__about">
-
                 <div class="about-us__sidebar">
                     <h2 class="about-us__subtitle">―ABOUT US―</h2>
                     <p class="about-us__title">Fill Your Home and Garden With Beautiful, Green Plants!</p>
@@ -74,8 +100,7 @@
                     <p class="about-us__offer"><img width="15" class="dot__about-us" src="img/dot.svg" alt="dot"> LARGE
                         SELECTION OF DIFFERENT
                         PLANTS</p>
-                    <p class="about-us__offer"><img width="15" class="dot__about-us" src="img/dot.svg" alt="dot">
-                        RELATED
+                    <p class="about-us__offer"><img width="15" class="dot__about-us" src="img/dot.svg" alt="dot"> RELATED
                         SERVICES AND HOME GOODS
                     </p>
                     <a href="#pick">
@@ -83,8 +108,15 @@
                     </a>
                 </div>
                 <div class="photo__about-us">
-                    <img width="596" src="img/about_us.png" alt="about_us">
+                    <img width="344" src="img/about_us.png" alt="about_us">
                 </div>
+            </div>
+            <div class="about-us__carousel-js">
+                <button class="about-us__carousel-prev">⪡</button>
+                <div class="about-us__carousel-container">
+    
+                </div>
+                <button class="about-us__carousel-next">⪢</button>
             </div>
             <div class="about-us__carousel">
                 <div class="carousel-about">
@@ -109,8 +141,7 @@
                         <p class="plants-for-home">Plants for Home</p>
                     </div>
                     <div class="about-us__carousel__info">
-                        <p class="info__plants-home">We offer a huge selection of flowers and evergreens that will be a
-                            joy
+                        <p class="info__plants-home">We offer a huge selection of flowers and evergreens that will be a joy
                             to
                             see for many years. A charming
                             plant will be a great addition to the interior.</p>
@@ -125,8 +156,7 @@
                         <p class="consultations">Consultations</p>
                     </div>
                     <div class="about-us__carousel__info">
-                        <p class="info__consultations">We not only sell plants and everything related to them but are
-                            also
+                        <p class="info__consultations">We not only sell plants and everything related to them but are also
                             ready
                             to answer any of your
                             questions!
@@ -142,8 +172,7 @@
                         <p class="sale-of">Sale of Flowerpots</p>
                     </div>
                     <div class="about-us__carousel__info">
-                        <p class="info__sale">Purchase flowerpots for plants of any type, from small flowers to huge
-                            palm
+                        <p class="info__sale">Purchase flowerpots for plants of any type, from small flowers to huge palm
                             trees.
                             Our store offers only
                             quality flowerpots from trusted manufacturers.</p>
@@ -158,8 +187,7 @@
                         <p class="plant-food">Plant Food</p>
                     </div>
                     <div class="about-us__carousel__info">
-                        <p class="info__plant-food">We offer everything you need to care for plants. Here you'll find a
-                            wide
+                        <p class="info__plant-food">We offer everything you need to care for plants. Here you'll find a wide
                             selection of fertilizers and
                             medicinal products to combat flower diseases.</p>
                         <a href="#contacts">
@@ -192,100 +220,10 @@
                 <h2 class="our-plants__title">Our Plants</h2>
                 <p class="our-plants__text">We sell both indoor and outdoor varieties of plants.</p>
                 <div class="our-plants__buttons">
-                    <button type="button" class="our-plants__btn">INDOOR</button>
-                    <button type="button" class="our-plants__btn">OUTDOOR</button>
+                    <button type="button" class="our-plants__btn indoor-category ">INDOOR</button>
+                    <button type="button" class="our-plants__btn outdoor-category">OUTDOOR</button>
                 </div>
-                <div class="our-plants__items">
-                    <div class="indoor__item">
-                        <div class="img__container">
-                            <img src="img/indoor-item1.png" alt="Small Ornamental Plants" class="indoor__img">
-                        </div>
-                        <h3 class="indoor__title">Small Ornamental Plants</h3>
-                        <p class="indoor__text">Such plants will fit on any windowsill, decorate your home or work
-                            table.
-                            Chlorophytum, money plants, aglaonema are not demanding in care but very beautiful.</p>
-                    </div>
-                    <div class="indoor__item">
-                        <div class="img__container">
-                            <img src="img/indoor-item2.png" alt="Indoor Trees" class="indoor__img">
-                        </div>
-                        <h3 class="indoor__title">Indoor Trees</h3>
-                        <p class="indoor__text">It's a beautiful and original option for a large room. A small
-                            indoor
-                            tree
-                            will add some zest to the office or a large living room. Large dracaena, ficus, alocasia
-                            will be
-                            a great option for your space.</p>
-                    </div>
-                    <div class="indoor__item">
-                        <div class="img__container">
-                            <img src="img/indoor-item3.png" alt="Plants in Florarium" class="indoor__img">
-                        </div>
-                        <h3 class="indoor__title">Plants in Florarium</h3>
-                        <p class="indoor__text">These are neatly planted compositions of succulents, grassroots,
-                            decorative
-                            ferns. Plants are selected so that they are in perfect harmony. Order your unique set of
-                            plants!
-                        </p>
-                    </div>
-                    <div class="indoor__item">
-                        <div class="img__container">
-                            <img src="img/indoor-item4.png" alt="Big Ornamental Plants" class="indoor__img">
-                        </div>
-                        <h3 class="indoor__title">Big Ornamental Plants</h3>
-                        <p class="indoor__text">Charming pachypodium, yucca, monstera will become a stunning
-                            decoration
-                            of
-                            your room or office. These plants will make a great impression on your guests.</p>
-                    </div>
-                    <div class="outdoor__item">
-                        <div class="img__container">
-                            <img src="img/outdoor-item1.png" alt="Outdoor Flowers" class="outdoor__img">
-                        </div>
-                        <h3 class="outdoor__title">Outdoor Flowers</h3>
-                        <p class="outdoor__text">Flowers form the basis of the exterior and are the first to catch
-                            the
-                            eye.
-                            Charming anemones, freesia, lilies will provide brightness and a pleasant aroma. Choose
-                            your
-                            outdoor flower! </p>
-                    </div>
-                    <div class="outdoor__item">
-                        <div class="img__container">
-                            <img src="img/outdoor-item2.png" alt="Succulents" class="outdoor__img">
-                        </div>
-                        <h3 class="outdoor__title">Succulents</h3>
-                        <p class="outdoor__text">Succulents do not require constant care, perfectly take root in any
-                            yard,
-                            look nice, and stylish. We will help you to create the optimal composition of succulents
-                            in
-                            your
-                            garden.</p>
-                    </div>
-                    <div class="outdoor__item">
-                        <div class="img__container">
-                            <img src="img/outdoor-item3.png" alt="Decorative Moss" class="outdoor__img">
-                        </div>
-                        <h3 class="outdoor__title">Decorative Moss</h3>
-                        <p class="outdoor__text">Decorative moss and lichen will make the garden truly special.
-                            Thanks
-                            to
-                            their density, coloring, and appearance, you can create a unique picture on the site.
-                        </p>
-                    </div>
-                    <div class="outdoor__item">
-                        <div class="img__container">
-                            <img src="img/outdoor-item4.png" alt="Decorative Conifers" class="outdoor__img">
-                        </div>
-                        <h3 class="outdoor__title">Decorative Conifers</h3>
-                        <p class="outdoor__text">The real decoration of any yard is decorative coniferous trees.
-                            Thuja,
-                            mountain pines, cedar pines will charm anyone! These are unpretentious, but very
-                            beautiful
-                            trees.</p>
-                    </div>
-
-                </div>
+                <div class="our-plants__items"></div>
 
             </div>
         </section>
@@ -354,6 +292,13 @@
                 </div>
             </div>
         </section>
+        <div class="clock">
+            <div class="clock-face">
+                <div class="hand hour-hand"></div>
+                <div class="hand min-hand"></div>
+                <div class="hand second-hand"></div>
+            </div>
+        </div>
         <!-- Milena Rusanova -->
         <!-- Papin Vladyslav -->
         <section class="best" id="pick">
@@ -682,9 +627,11 @@
             </div>
         </section>
         <div class="kind-carousel">
+            <button class="kind-carousel-prev">⪡</button>
             <div class="kind-carousel-container">
                 
             </div>
+            <button class="kind-carousel-next">⪢</button>
         </div>
         <!-- Andrii Romanchuk -->
         <!-- Vladyslav Tymoshenko -->
@@ -769,9 +716,14 @@
         </div>
     </footer>
     <!-- Pavlo Sobkiv-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
     <script src="js/random-plant.js"></script>
     <script src="js/kind-carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="/js/faq-clock.js"></script>
+    <script src="js/about_us-carousel.js"></script>
+    <script src="js/our-plants.js"></script>
+    <script src="js/header-music-player.js"></script>
 </body>
 
 </html>

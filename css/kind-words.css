@@ -50,7 +50,6 @@
    max-width: 100%;
    width: 70px;
    height: 70px;
-   /* object-fit: cover; */
 }
 .kind-words__container-text {
    display: flex;
@@ -77,6 +76,9 @@
    height: auto;
 }
 .kind-carousel {
+   position: relative;
+   display: flex;
+   justify-content: center;
    min-width: 320px;
    font-size: 17px;
    line-height: 1.5;
@@ -88,22 +90,41 @@
    align-items: center;
    justify-content: center;
    background-color: var(--carousel-background-color);
+   width: 100%;
 }
 .kind-carousel__item {
    display: flex;
    align-items: center;
    justify-content: center;
    width: auto;
-   min-width: 220px;
+   min-width: 420px;
    max-height: 250px;
-   min-height: 150px;
+   min-height: 328px;
    margin: 80px 20px;
    background-color: var(--kind-carousel-item-color);
 }
 .kind-carousel__img {
-   width: 80%;
-   max-width: 200px;
-   height: 50%;
+   width: 100%;
+   /* max-width: 200px; */
+   height: 100%;
+}
+.kind-carousel-prev {
+   position: absolute;
+   top: 45%;
+   left: 10%;
+   border-radius: 50%;
+   width: 27px;
+   border: 0px;
+   background-color: var(--kind-carousel-button);
+}
+.kind-carousel-next {
+   position: absolute;
+   top: 45%;
+   left: 90%;
+   border-radius: 50%;
+   width: 27px;
+   border: 0px;
+   background-color: var(--kind-carousel-button);
 }
 @media (min-width: 768px) {
    .kind-words {
@@ -173,5 +194,21 @@
       line-height: 1.4;
       margin-top: 5px;
       margin-bottom: 10px;
+   }
+   .kind-carousel__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      min-width: 220px;
+      max-height: 250px;
+      min-height: 150px;
+      margin: 80px 20px;
+      background-color: var(--kind-carousel-item-color);
+   }
+   .kind-carousel__img {
+      width: 80%;
+      max-width: 200px;
+      height: 50%;
    }
 }
