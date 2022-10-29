@@ -59,7 +59,7 @@
   ];
   let currentCategory = "indoor";
   function renderProducts(products) {
-    const productsContainer = document.querySelector(".our-plants__items");
+    const productsContainer = document.querySelector(".our-plants__container");
     productsContainer.innerHTML = "";
     const filteredProducts = products.filter(
       (product) => product.category === currentCategory

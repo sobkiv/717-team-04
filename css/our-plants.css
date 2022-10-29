@@ -32,50 +32,59 @@
 .our-plants__btn {
     background: none;
     border: none;
-    border-bottom: 2px solid var(--btn-price-color);
-    color: var(--headers-color);
+    color: var(--btn-nonactive-color);
     font-weight: bold;
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 3px;
     padding: 15px 20px;
-    margin-bottom:-1px ;
+    margin-bottom: -1px;
 }
-.indoor__item,.outdoor__item {
-width: 100%;
-margin-top: 20px;
+.our-plants__btn.active{
+    color: var(--headers-color);
+    border-bottom: 2px solid var(--btn-price-color)
 }
+
+.indoor__item {
+    width: 100%;
+    margin-top: 20px;
+}
+
 .img__container {
-   width: 100%;
-   margin: -19px;;
+    width: 100%;
+    margin: -19px;
+    ;
 }
-.indoor__img,
-.outdoor__img {
+
+.indoor__img {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 20px;
-    margin: 20px 20px;;
+    margin: 20px 20px;
+    ;
 
 }
 
 .our-plants__items {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10px;
-    
+    margin-top: 10px; */
+
 }
 
-.indoor__title,.outdoor__title {
+.indoor__title {
     font-size: 22px;
     font-family: "Source Sans Pro", sans-serif;
     text-align: left;
     margin-bottom: 10px;
     padding-left: 5px;
-    margin-top:25px;
+    margin-top: 25px;
     padding-top: 20px;
 }
-.indoor__text,.outdoor__text {
+
+.indoor__text
+{
     line-height: 1.5;
     word-spacing: 3px;
     margin-bottom: 20px;
@@ -83,27 +92,30 @@ margin-top: 20px;
     padding-left: 5px;
     padding-right: 25px;
 
-    
+
 }
+
 .our-plants__buttons {
-    border-bottom:1px solid var(--our-plants-line-color);
+    border-bottom: 1px solid var(--our-plants-line-color);
     text-align: center;
     margin-bottom: 30px;
 }
 
- @media (min-width:768px) {
-    .our-plants__items {
-     display: grid;
-     grid-template-columns: 1fr 1fr; 
-     gap: 30px;
+@media (min-width:768px) {
+    .our-plants__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+       
     }
 }
 
 @media (min-width:991px) {
-    .our-plants__items {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr; 
-     gap: 30px;
-     margin: 0 10px;
+    .our-plants__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        margin-left: 20px;
+        margin: 0 10px;
     }
 }
