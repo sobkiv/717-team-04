@@ -57,6 +57,7 @@
       category: "outdoor",
     },
   ];
+  
   let currentCategory = "indoor";
   function renderProducts(products) {
     const productsContainer = document.querySelector(".our-plants__container");
@@ -76,6 +77,7 @@
       </div>`;
     }
   }
+  
   renderProducts(products);
   document.querySelector(".indoor-category").addEventListener("click", (ev) => {
     clearActiveCategories();
@@ -92,7 +94,11 @@
   function clearActiveCategories() {
     const categoryButtons = document.querySelectorAll('.our-plants__btn');
     for (const button of categoryButtons) {
-      button.classList.remove('active');
+    
+        button.classList.remove('active');
+      
     }
-  };
+
+  }
+
 })();
