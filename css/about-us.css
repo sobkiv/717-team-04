@@ -25,6 +25,10 @@
     padding-right: 15px;
 }
 
+.about-us__offer {
+    display: flex;
+}
+
 .about-us__info {
     font-size: 17px;
     padding: 15px;
@@ -41,14 +45,17 @@
 }
 
 .about-us__browse {
-    color: white;
     background-color: var(--btn-price-color);
-    font-size: 11px;
-    font-weight: bold;
-    border-radius: 21px;
+    color: var(--btn-text);
+    border-width: 1px;
+    border-radius: 28px;
+    border-style: solid;
+    cursor: pointer;
+    text-align: center;
     padding: 12px 24px;
-    margin-left: 50px;
-    margin-right: 500px;
+    margin-top: 40px;
+    margin-left: 80px;
+    width: fit-content;
 
 }
 
@@ -81,6 +88,7 @@
     background-color: var(--carousel-item-color);
     border-radius: 50%;
     color: #79a207;
+    width: 50px;
 }
 
 .about-us__carousel__title {
@@ -103,11 +111,23 @@
     width: 100px;
 }
 
-.kind-carousel-prev,
-.kind-carousel-next {
-    display: flex;
+.about-us__carousel-prev,
+.about-us__carousel-next {
     border-radius: 50%;
-    background-color: #79a207
+    background-color: #79a207;
+    width: 27px;
+    height: 27px;
+    margin: auto;
+}
+
+.about-us__carousel-js {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.about-us__carousel-container {
+    display: flex;
 }
 
 @media (min-width: 320px) {
@@ -115,6 +135,11 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    .photo__about {
+        width: 344px;
+        margin: auto;
     }
 }
 
@@ -131,6 +156,10 @@
         justify-items: center;
         align-items: center;
     }
+
+    .photo__about {
+        width: 544px;
+    }
 }
 
 @media(min-width:992px) {
@@ -140,5 +169,9 @@
         gap: 30px;
         justify-items: center;
         align-items: center;
+    }
+
+    .photo__about {
+        width: 644px;
     }
 }
