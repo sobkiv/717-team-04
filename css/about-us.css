@@ -50,8 +50,8 @@
     text-align: center;
     padding: 12px 24px;
     margin-top: 40px;
-    margin-left:80px;
-    width:fit-content;
+    margin-left: 80px;
+    width: fit-content;
 
 }
 
@@ -108,9 +108,10 @@
 
 .about-us__carousel-prev,
 .about-us__carousel-next {
-    display: flex;
     border-radius: 50%;
-    background-color: #79a207
+    background-color: #79a207;
+    width: 27px;
+    height: 27px;
 }
 
 .about-us__carousel-js {
@@ -128,6 +129,7 @@
         grid-template-columns: 1fr;
         gap: 30px;
     }
+
     .photo__about {
         width: 344px;
     }
@@ -146,6 +148,7 @@
         justify-items: center;
         align-items: center;
     }
+
     .photo__about {
         width: 544px;
     }
@@ -159,6 +162,7 @@
         justify-items: center;
         align-items: center;
     }
+
     .photo__about {
         width: 644px;
     }
