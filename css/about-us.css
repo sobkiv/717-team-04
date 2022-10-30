@@ -84,6 +84,7 @@
     background-color: var(--carousel-item-color);
     border-radius: 50%;
     color: #79a207;
+    width: 50px;
 }
 
 .about-us__carousel__title {
