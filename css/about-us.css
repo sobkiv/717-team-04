@@ -41,14 +41,17 @@
 }
 
 .about-us__browse {
-    color: white;
     background-color: var(--btn-price-color);
-    font-size: 11px;
-    font-weight: bold;
-    border-radius: 21px;
+    color: var(--btn-text);
+    border-width: 1px;
+    border-radius: 28px;
+    border-style: solid;
+    cursor: pointer;
+    text-align: center;
     padding: 12px 24px;
-    margin-left: 50px;
-    margin-right: 500px;
+    margin-top: 40px;
+    margin-left:80px;
+    width:fit-content;
 
 }
 
