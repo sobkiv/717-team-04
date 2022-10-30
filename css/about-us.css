@@ -103,11 +103,20 @@
     width: 100px;
 }
 
-.kind-carousel-prev,
-.kind-carousel-next {
+.about-us__carousel-prev,
+.about-us__carousel-next {
     display: flex;
     border-radius: 50%;
     background-color: #79a207
+}
+
+.about-us__carousel-js {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us__carousel-container {
+    display: flex;
 }
 
 @media (min-width: 320px) {
@@ -115,6 +124,9 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+    .photo__about {
+        width: 344px;
     }
 }
 
@@ -131,6 +143,9 @@
         justify-items: center;
         align-items: center;
     }
+    .photo__about {
+        width: 544px;
+    }
 }
 
 @media(min-width:992px) {
@@ -140,5 +155,8 @@
         gap: 30px;
         justify-items: center;
         align-items: center;
+    }
+    .photo__about {
+        width: 644px;
     }
 }
