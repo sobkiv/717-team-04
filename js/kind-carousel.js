@@ -29,7 +29,7 @@
       currentSlideIndx = currentSlideIndx - 1 < 0 ? slides.length - 1 : currentSlideIndx - 1;
       renderSlide();
    }
-   setInterval(nextSlide, 3000);
+   setInterval(nextSlide, 4000);
    renderSlide();
    const nextBtn = document.querySelector('.kind-carousel-next');
    nextBtn.addEventListener('click', nextSlide);
