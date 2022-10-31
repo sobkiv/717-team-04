@@ -26,7 +26,8 @@
 .random-plant{
   font-size: 18px;
   margin: 3px 8px;
-  color:  var(--kind-carousel-item-color);
+  /* color:  var(--kind-carousel-item-color); */
+  color: lightgray;
 }
 .plant-today__randomise-button{
   transition: linear all 0.15s;
@@ -35,6 +36,7 @@
   border-radius: 50%;
   width: 36px;
   font-size: 24px;
+  color: lightgray;
 }
 
 .plant-today__randomise-button:hover{
