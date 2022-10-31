@@ -28,11 +28,12 @@
   --bs-font-sans-serif: "Source Sans Pro", sans-serif;
   --bs-accordion-btn-focus-border-color: white;
   --bs-accordion-active-bg: white;
+  --bs-accordion-active-color: white;
+  --kind-carousel-button: #caba88;
   --bs-accordion-active-color: rgb(13, 60, 0);
   --bs-accordion-inner-border-radius: white;
   --bs-border-color: white;
   --bs-accordion-btn-focus-border-color: white;
-  --kind-carousel-button: rgb(236, 210, 160);
   --copyright-text: #A9A9A9;
 }
 
