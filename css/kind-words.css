@@ -93,6 +93,7 @@
    width: 100%;
 }
 .kind-carousel__item {
+   
    display: flex;
    align-items: center;
    justify-content: center;
