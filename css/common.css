@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 :root {
   font-family: "Source Sans Pro", sans-serif;
   --btn-price-color: #79a207;
@@ -35,6 +35,7 @@
   --bs-accordion-inner-border-radius: white;
   --bs-border-color: white;
   --bs-accordion-btn-focus-border-color: white;
+  --copyright-text: #A9A9A9;
 }
 
 img {
