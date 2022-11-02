@@ -456,14 +456,14 @@
         <!--Olexandr Sumtsov-->
         <!-- Revutsky Stanislav -->
         <section class="features">
-            <div class="features__info">
-                <span class="features__info-title">―Features―</span>
-                <h2 class="features__info-subtitle">Why Choose Us</h2>
-                <p class="features__info-description">In our store and greenhouse, we grow and sell only the best
-                    plants. With PlantLand you can make your home or office cozier.</p>
-            </div>
-            <div class="features__items-and-picture">
-                <div class="features__items">
+          <div class="features__items-and-picture">
+            <div class="features__items">
+                  <div class="features__info">
+                      <span class="features__info-title">―Features―</span>
+                      <h2 class="features__info-subtitle">Why Choose Us</h2>
+                      <p class="features__info-description">In our store and greenhouse, we grow and sell only the best
+                          plants. With PlantLand you can make your home or office cozier.</p>
+                  </div>
                     <article class="features__item">
                         <img class="features__item-icon" src="img/features-icon1.svg" alt="plant-icon">
                         <div class="features__item-text-box">
@@ -637,11 +637,15 @@
             </div>
         </section>
         <div class="kind-carousel">
-            <button class="kind-carousel-prev">⪡</button>
+            <button class="kind-carousel-prev">
+                <svg class="kind-carousel__btn-prev" viewBox="0 0 30 30"><defs><path d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z" id="a-1653484000118"></path></defs><use fill-rule="nonzero" opacity=".8" xlink:href="#a-1653484000118"></use></svg>
+            </button>
             <div class="kind-carousel-container">
 
             </div>
-            <button class="kind-carousel-next">⪢</button>
+            <button class="kind-carousel-next">
+                <svg class="kind-carousel__btn-next" viewBox="0 0 30 30"><defs><path d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z" id="a-1653484000118"></path></defs><use fill-rule="nonzero" opacity=".8" xlink:href="#a-1653484000118"></use></svg>
+            </button>
         </div>
         <!-- Andrii Romanchuk -->
         <!-- Vladyslav Tymoshenko -->
@@ -707,23 +711,23 @@
     <footer class="footer">
         <nav class="footer__navigation">
             <!-- Is it necessary to use the teg <nav> in the footer? -->
-            <div class="footer__logo-conteiner">
-                <img width="150" src="img/logo-footer.svg" class="footer__logo-image" alt="Plants logo">
-            </div>
             <div class="footer__menu-conteiner">
+                <div class="footer__logo-conteiner">
+                    <img width="auto" src="img/logo-footer.svg" class="footer__logo-image" alt="Plants logo">
+                </div>
                 <ul class="footer__menu">
-                    <li class="footer__menu-item"><a href="#about-us">About us</a></li>
-                    <li class="footer__menu-item"><a href="#plants">Plants</a></li>
-                    <li class="footer__menu-item"><a href="#pick">Pick of the Month</a></li>
-                    <li class="footer__menu-item"><a href="#pricing">Pricing</a></li>
-                    <li class="fooetr__menu-item"><a href="#testimonials">Testimonials</a></li>
-                    <li class="footer__menu-item"><a href="#contact-us">Contact us</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#about-us">About us</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#plants">Plants</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#pick">Pick of the Month</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#pricing">Pricing</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#testimonials">Testimonials</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#contact-us">Contact us</a></li>
                 </ul>
             </div>
         </nav>
         <div class="footer__copyright">
-            <p class="footer__owner">© Created by </p>
-            <p class="footer__rights">All rights Reserved</p>
+            <p class="footer__owner footer__rights-color">© Created by </p>
+            <p class="footer__rights footer__rights-color">All rights Reserved</p>
         </div>
     </footer>
     <!-- Pavlo Sobkiv-->
