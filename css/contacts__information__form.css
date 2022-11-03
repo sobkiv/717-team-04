@@ -54,6 +54,9 @@
 .address__map {
   margin-top: 30px;
 }
+.information__colum{
+  margin-bottom: 20px;
+}
 
 .request__form {
   display: flex;
@@ -84,7 +87,7 @@
   height: 100%;
   background: #ffffff;
   border-top: solid 3px #79a207;
-  border-radius: 2px;
+  border-radius: 1.5%;
   box-shadow: inset 3px 3px 3px rgb(236, 236, 236);
 }
 
@@ -103,6 +106,9 @@ input {
   border-bottom-color: rgb(13, 60, 0);
   background-color: #faf5f2;
 }
+.iframe__map{
+  width: 100%;
+}
 
 #submit__button {
   width: 270px;
@@ -114,6 +120,10 @@ input {
   border: none;
   border-width: 1px;
   border-radius: 21px;
+}
+#submit__button:hover{
+  background-color: var(--kind-carousel-item-color);
+  
 }
 
 @media (min-width: 687px) {
@@ -146,6 +156,8 @@ input {
     display: flex;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
   }
 
   .contacts__information {
@@ -159,11 +171,13 @@ input {
     margin-right: 100px;
   }
 
-  .row {
+  .information__colum {
     display: grid;
-    grid-template-columns: 3fr 6fr;
-    grid-column-gap: 50px;
-    margin-bottom: 30px;
+    grid-template-columns: 50% 50%;
+  }
+  .paragraph__info{
+    padding: 0
+    ;
   }
 
   input {

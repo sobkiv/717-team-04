@@ -2,19 +2,125 @@ footer {
     width: auto;
     height: auto;
     background-color: var(--carousel-image-color);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
 }
 
-.footer {
-    
+.footer__navigation::after {
+    background-color: var(--bs-border-color);
+    position: absolute;
+    left: 25px;
+    margin-top: -30px;
+    height: 1px;
+    width: calc(100% - 50px);
+    content: "";
+    opacity: .2;
 }
 
-nav .footer__copyright {
+.footer__menu-conteiner {
+    padding: 65px 24px 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0px 57px;
+    align-items: center;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer__logo-image {
+    width: 162px;
+}
+
+.footer__menu-item {
+    display: flex;
+    font-size: 17px;
+    margin: 6px 20px;
+    padding-right: 2rem;
+    margin-top: 10px;
+}
+
+.footer__menu-item-light-color {
+    color: white;
+}
+
+.footer__menu-item-hover:hover {
+    color: var(--subtitle-color);
+}
+
+.footer__copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.footer__rights-color {
+    color: var(--copyright-text);
+    font-size: 14px;
+    letter-spacing: .064em;
+}
+
+@media (min-width: 768px) {
+    .footer__menu-conteiner {
+        flex-direction: row;
+        padding: 55px 30px;
+        position: relative;
+        left: 5px;
+    }
+
+    .footer__logo-conteiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 30%; 
+    }
+
+    .footer__menu {
+        margin: 0px;
+        width: 70%; 
+        padding: 0px;
+        position: relative;
+        right: -10px;
+        
+    }
+
+    .footer__menu-item-hover {
+        margin-bottom: 15px;
+    }
+
+    .footer__copyright {
+        padding: 15px 32px;
+        flex-direction: row;
+        margin-top: -20px;
+    }
+
+    .footer__navigation::after {
+        left: 32px;
+        width: calc(100% - 64px);
+    }
+}
+
+@media (min-width: 1058px) {
+    .footer__menu {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .footer__menu-item {
+        position: relative;
+        top: 15px;
+        padding: 0px;
+        width: auto;
+    }
+
+    .footer__navigation::after .footer__menu {
+       max-width: 1200px;
+    }
 }

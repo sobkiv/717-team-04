@@ -104,13 +104,37 @@
 }
 
 .accordion-button:not(.collapsed) {
-    border-color: white;
+    border-color: var(--bs-accordion-btn-focus-border-color);
     background-color: white;
+    text-decoration-color: var(--bs-accordion-active-color);
+}
+
+element.style {}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 0;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+}
+
+.accordion-item {
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
 }
 
 .accordion-button:focus {
     border-color: white;
     text-decoration-color: var(--header-text-color);
+}
+
+.accordion {
+    --bs-accordion-btn-focus-border-color: white;
+    --bs-accordion-active-color: black;
+    --bs-accordion-border-color: var(--bs-border-color);
 }
 
 .clock {

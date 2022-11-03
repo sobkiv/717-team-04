@@ -29,6 +29,10 @@
   color: var(--secondary-link-color);
 }
 
+.phone-number__link:hover {
+  color: var(--secondary-link-color);
+}
+
 @media (min-width: 768px) {
   .phone-number__title {
     font-size: 74px;
