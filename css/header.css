@@ -232,8 +232,8 @@ header div nav .header__burger-menu .active::after {
 header section div .container-section {
     position: relative;
 }
-
-.header__menu-conteiner {
+ 
+/* .header__menu-conteiner {
     position: fixed;
     top: -100%;
     left: 0;
@@ -246,7 +246,7 @@ header section div .container-section {
     transition: top 0.3s ease-in 0.1s;
     overflow: hidden;
     margin: auto;
-}
+} */
 
 section div nav .header__navigation .header__menu-conteiner .active {
     top: 0;
