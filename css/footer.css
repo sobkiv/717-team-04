@@ -111,16 +111,29 @@ footer {
     .footer__menu {
         flex-direction: row;
         justify-content: flex-end;
+        max-width: 1200px;  
     }
 
     .footer__menu-item {
         position: relative;
         top: 15px;
         padding: 0px;
+        max-width: 1200px;
         width: auto;
     }
 
-    .footer__navigation::after .footer__menu {
-       max-width: 1200px;
+    .footer-conteiner {
+        max-width: 1200px;
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+/* 
+    footer {
+        display: flex;
+        justify-content: center;
+    } */
+    
 }
