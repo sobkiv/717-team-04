@@ -11,10 +11,9 @@
    line-height: 25.5px;
    max-width: 100%;
    width: auto;
-   padding: 0 30px 180px 50px;
+   padding: 0 30px 180px 30px;
    margin: 0;
 }
-
 .kind-words__items-title {
    color: var(--btn-price-color);
    font-weight: bold;
@@ -27,6 +26,7 @@
    max-width: 100%;
    font-size: 34px;
    line-height: 1.2;
+   font-weight: bold;
 }
 .kind-words__items-text {
    margin-top: 25px;
@@ -114,7 +114,8 @@
    top: 45%;
    left: 25px;
    border-radius: 50%;
-   width: 25px;
+   width: 28px;
+   height: 28px;
    border: 0px;
    background-color: var(--kind-carousel-button);
 }
@@ -123,9 +124,19 @@
    top: 45%;
    right: 25px;
    border-radius: 50%;
-   width: 27px;
+   width: 28px;
+   height: 28px;
    border: 0px;
    background-color: var(--kind-carousel-button);
+}
+.kind-carousel__btn-prev {
+   transform: rotate(180deg);
+   width: 12px;
+   height: 12px;
+}
+.kind-carousel__btn-next {
+   width: 12px;
+   height: 12px;
 }
 @media (min-width: 400px){
    .kind-carousel__item{
@@ -256,9 +267,27 @@
    .kind-carousel-prev {
       top: 45%;
       left: 60px;
+      background-color: transparent;
    }
    .kind-carousel-next {
       top: 45%;
       right: 60px;
+      background-color: transparent;
+   }
+   .kind-carousel__btn-next {
+      width: 27px;
+      height: 27px;
+      fill: rgb(236, 210, 160);
+   }
+   .kind-carousel__btn-prev {
+      width: 27px;
+      height: 27px;
+      fill: rgb(236, 210, 160);
+   }
+   .kind-carousel__btn-prev:hover {
+      fill: rgb(255, 255, 215);
+   }
+   .kind-carousel__btn-next:hover {
+      fill: rgb(255, 255, 215);
    }
 }
