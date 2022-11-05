@@ -53,11 +53,12 @@
     font-weight: bold;
 }
 
-.best__item-btn :hover {
+/*.best__item-btn :hover {
     color: var(--header-text-color)
-}
+}*/
 .best__item-btns-text.active{
     border-bottom: 2px solid var(--header-text-color);
+    color: var(--headers-color);
 }
 .best-container{ margin-top: 50px;
     /*display: flex;*/
