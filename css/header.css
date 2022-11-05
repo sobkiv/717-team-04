@@ -5,7 +5,6 @@
     margin-bottom: -150px;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .music-container {
@@ -17,7 +16,6 @@
     position: relative;
     margin: 100px 0;
     z-index: 10;
-    
 }
 
 .img-container {
@@ -189,6 +187,75 @@
     top: 14px;
 }
 
+header nav div .header__burger-menu span,
+header nav div .header__burger-menu::after,
+header nav div .header__burger-menu::before {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--header-text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+header div nav .header__burger-menu span {
+    transform: scale(1);
+}
+
+header div nav .header__burger-menu::before,
+header div nav .header__burger-menu::after {
+    content: " ";
+}
+
+header div nav .header__burger-menu::before {
+    top: 0;
+}
+
+header div nav .header__burger-menu::after {
+    bottom: 0;
+}
+
+header div nav .header__burger-menu .active span {
+    transform: scale(0);
+}
+
+header div nav .header__burger-menu .active::before {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+header div nav .header__burger-menu .active::after {
+    bottom: 40%;
+    transform: rotate(45deg);
+}
+
+header section div .container-section {
+    position: relative;
+}
+ 
+/* .header__menu-conteiner {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-text-color);
+    z-index: 2;
+    transition: top 0.3s ease-in;
+    padding: 15px 24px 50px 24px;
+    transition: top 0.3s ease-in 0.1s;
+    overflow: hidden;
+    margin: auto;
+} */
+
+section div nav .header__navigation .header__menu-conteiner .active {
+    top: 0;
+}
+
+section div nav .header__navigation .active {
+    top: 0;
+}
+
 /* burger menu and*/
 
 .header__section {
@@ -215,7 +282,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .header__subtitle {
@@ -267,7 +333,6 @@
     letter-spacing: 0.01em;
     border-radius: 28px;
     margin-right: 20px;
-
 }
 
 #header__banner-button-item1-anim:hover {
@@ -322,7 +387,6 @@
     .header__banner-conteiner {
         max-width: 550px;
     }
-
 }
 
 @media (min-width: 768px) {
@@ -388,7 +452,6 @@
         display: block;
         left: -40px;
         top: 0px;
-
     }
 
 
@@ -492,5 +555,4 @@
     .header__banner-button-item1 {
         margin-right: 0px;
     }
-
 }

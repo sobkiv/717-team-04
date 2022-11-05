@@ -23,26 +23,20 @@
                 <a href="https://koldovsky.github.io/717-team-04/#" class="header__logo-link"><img width="162"
                         src="img/logo-header.svg" class="header__logo-image" alt="Plants logo"></a>
             </div>
-            <div class="header__burger-menu-wraper">
+            <div class="header__burger-menu-wraper active">
                 <div class="header__burger-menu">
                     <span class="header__burger-menu-item"></span>
                 </div>
             </div>
             <!-- Burger menu -->
-            <div class="header__menu-conteiner">
+            <div class="header__menu-conteiner active">
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#about-us">About us</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#plants">Plants</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#pick">Pick of the Month</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#pricing">Pricing</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#testimonials">Testimonials</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#contact-us">Contact us</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#about-us">About us</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#plants">Plants</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#pick">Pick of the Month</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#pricing">Pricing</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#testimonials">Testimonials</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#contact-us">Contact us</a></li>
                 </ul>
             </div>
         </nav>
@@ -752,31 +746,27 @@
 
     <!-- Pavlo Sobkiv-->
     <footer class="footer">
-        <nav class="footer__navigation">
-            <!-- Is it necessary to use the teg <nav> in the footer? -->
-            <div class="footer__menu-conteiner">
-                <div class="footer__logo-conteiner">
-                    <img width="auto" src="img/logo-footer.svg" class="footer__logo-image" alt="Plants logo">
+        <div class="footer-conteiner">
+            <nav class="footer__navigation">
+                <!-- Is it necessary to use the teg <nav> in the footer? -->
+                <div class="footer__menu-conteiner">
+                    <div class="footer__logo-conteiner">
+                        <img width="auto" src="img/logo-footer.svg" class="footer__logo-image" alt="Plants logo">
+                    </div>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#about-us">About us</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#plants">Plants</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#pick">Pick of the Month</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#pricing">Pricing</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#testimonials">Testimonials</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#contact-us">Contact us</a></li>
+                    </ul>
                 </div>
-                <ul class="footer__menu">
-                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
-                            href="#about-us">About us</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
-                            href="#plants">Plants</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
-                            href="#pick">Pick of the Month</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
-                            href="#pricing">Pricing</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
-                            href="#testimonials">Testimonials</a></li>
-                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
-                            href="#contact-us">Contact us</a></li>
-                </ul>
+            </nav>
+            <div class="footer__copyright">
+                <p class="footer__owner footer__rights-color">© Created by </p>
+                <p class="footer__rights footer__rights-color">All rights Reserved</p>
             </div>
-        </nav>
-        <div class="footer__copyright">
-            <p class="footer__owner footer__rights-color">© Created by </p>
-            <p class="footer__rights footer__rights-color">All rights Reserved</p>
         </div>
     </footer>
     <!-- Pavlo Sobkiv-->
@@ -794,6 +784,7 @@
     <script src="js/header-music-player.js"></script>
     <script src="js/contacts_information_form.js"></script>
     <script src="js/pricing-product-list.js"></script>
+    <script src="js/burger-menu.js"></script>
 </body>
 
 </html>
