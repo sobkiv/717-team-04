@@ -23,26 +23,20 @@
                 <a href="https://koldovsky.github.io/717-team-04/#" class="header__logo-link"><img width="162"
                         src="img/logo-header.svg" class="header__logo-image" alt="Plants logo"></a>
             </div>
-            <div class="header__burger-menu-wraper">
+            <div class="header__burger-menu-wraper active">
                 <div class="header__burger-menu">
                     <span class="header__burger-menu-item"></span>
                 </div>
             </div>
             <!-- Burger menu -->
-            <div class="header__menu-conteiner">
+            <div class="header__menu-conteiner active">
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#about-us">About us</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#plants">Plants</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#pick">Pick of the Month</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#pricing">Pricing</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#testimonials">Testimonials</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
-                            href="#contact-us">Contact us</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#about-us">About us</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#plants">Plants</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#pick">Pick of the Month</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#pricing">Pricing</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#testimonials">Testimonials</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#contact-us">Contact us</a></li>
                 </ul>
             </div>
         </nav>
@@ -90,6 +84,33 @@
         </div>
     </header>
     <!-- Pavlo Sobkiv -->
+   
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <div class="icon-cart">
+         <img src="img/shopping-bag-svgrepo-com.svg" alt="">
+        </div>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Shopping cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <!-- Iryna Rolinska  -->
         <section class="about-us" id="about-us">
@@ -318,142 +339,18 @@
             </div>
             <div class="best__item">
                 <div class="best__item-btn">
-                    <button type="button" class="best__item-btns">
-                        <span class="best__item-btns-text best__item-btns-text--active">EVERGREENS</span>
+                    <button type="button" class="best__item-btns evergreens-category ">
+                        <span class="best__item-btns-text active ">EVERGREENS</span>
                     </button>
-                    <button type="button" class="best__item-btns">
+                    <button type="button" class="best__item-btns succulents-category">
                         <span class="best__item-btns-text">SUCCULENTS</span>
                     </button>
                 </div>
-                <div class="best__item-tabs">
-                    <div class="best__product">
-                        <a href="floral-moss.html">
-                            <img src="img/floral_moss.png" alt="floral-moss" class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="floral-moss.html" class="bestse__text-link">Floral Moss</a>
-                        </p>
-                        <p class="best__product-price">&#36;33,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order now</button>
-                        </div>
-                    </div>
-                    <div class="best__product">
-                        <a href="areca-palm.html">
-                            <img src="img/areca_palm.png" alt="areca-palm" class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="areca-palm.html" class="best__product-text-link">Areca Palm</a>
-                        </p>
-                        <p class="best__product-price">&#36;22,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order now</button>
-                        </div>
-
-                    </div>
-                    <div class="best__product">
-                        <a href="monstera-obliqua.html">
-                            <img src="img/monstera_obliqua.png" alt="monsera-obliqua" class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="monstera-obliqua.html" class="best__product-text-link">Monstera
-                                Obliqua</a>
-                        </p>
-                        <p class="best__product-price"> &#36;45,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order now</button>
-                        </div>
-                    </div>
-                    <div class="best__product  ">
-                        <a href="sansevieria-trifasciata.html"><img src="img/sansevieria_trifasciata.png"
-                                alt="Sansevieria Trifasciata" class="best__product-img"></a>
-                        <p class="best__product-text">
-                            <a href="sansevieria-trifasciata.html" class="best__product-text-link">Sansevieria
-                                Trifasciata</a>
-                        </p>
-                        <p class="best__product-price">&#36;36,00</p>
-                        <div class="best__product-btn">
-                            <button class="best__product-btn-btn" type="button">Order now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best__item-tabs">
-                    <div class="best__product">
-                        <a href="graptosedum-darley.html"><img src="img/graptosedum_darley.png" alt="Graptosedum Darley"
-                                class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="graptosedum-darley.html" class="best__product-text-link">Graptosedum Darley</a>
-                        </p>
-                        <p class="best__product-price">&#36;32,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order now</button>
-                        </div>
-                    </div>
-                    <div class="best__product">
-                        <a href="haworthia-venosa.html"><img src="img/haworthia_venosa.png" alt="Haworthia Venosa"
-                                class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="haworthia-venosa.html" class="best__product-text-link">Haworthia
-                                Venosa</a>
-                        </p>
-                        <p class="best__product-price">&#36;48,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order now</button>
-                        </div>
-                    </div>
-                    <div class="best__product">
-                        <a href="silver-torch.html"><img src="img/silver_torch.png" alt="Silver Torch"
-                                class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="silver-torch.html" class="best__product-text-link">Silver
-                                Torch</a>
-                        </p>
-                        <p class="best__product-price">&#36;32,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order
-                                now</button>
-                        </div>
-                    </div>
-                    <div class="best__product">
-                        <a href="notocactus-roseoluteus.html"><img src="img/notocactus_roseoluteus.png"
-                                alt="Notocactus Roseoluteus" class="best__product-img"></a>
-                        <p class="best__product-text">
-                            <a href="notocactus-roseoluteus.html" class="best__product-text-link">Notocactus
-                                Roseoluteus</a>
-                        </p>
-                        <p class="best__product-price">&#36;33,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order
-                                now</button>
-                        </div>
-                    </div>
-                </div>
+                <div class="best-container"></div>
             </div>
         </section>
         <!-- Papin Vladyslav -->
-        <!--Olexandr Sumtsov-->
-        <section class="statistics">
-            <div class="statistics__item">
-                <p class="statistics__number">120+</p>
-                <p class="statisctics__name">FLOWERS</p>
-            </div>
-            <div class="statistics__item">
-                <p class="statistics__number">239+</p>
-                <p class="statisctics__name">EVERGREENS</p>
-            </div>
-            <div class="statistics__item">
-                <p class="statistics__number">148+</p>
-                <p class="statisctics__name">SUCCULENTS</p>
-            </div>
-            <div class="statistics__item">
-                <p class="statistics__number">150+</p>
-                <p class="statisctics__name">PALM TREES</p>
-            </div>
-        </section>
-        <!--Olexandr Sumtsov-->
+        
         <!-- Revutsky Stanislav -->
         <section class="features">
             <div class="features__items-and-picture">
@@ -721,13 +618,24 @@
         </section>
         <!-- Vladyslav Tymoshenko -->
     </main>
+    <div class="alert-container"></div>
     <!-- Pavlo Sobkiv-->
     <footer class="footer">
-        <nav class="footer__navigation">
-            <!-- Is it necessary to use the teg <nav> in the footer? -->
-            <div class="footer__menu-conteiner">
-                <div class="footer__logo-conteiner">
-                    <img width="auto" src="img/logo-footer.svg" class="footer__logo-image" alt="Plants logo">
+        <div class="footer-conteiner">
+            <nav class="footer__navigation">
+                <!-- Is it necessary to use the teg <nav> in the footer? -->
+                <div class="footer__menu-conteiner">
+                    <div class="footer__logo-conteiner">
+                        <img width="auto" src="img/logo-footer.svg" class="footer__logo-image" alt="Plants logo">
+                    </div>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#about-us">About us</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#plants">Plants</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#pick">Pick of the Month</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#pricing">Pricing</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#testimonials">Testimonials</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#contact-us">Contact us</a></li>
+                    </ul>
                 </div>
                 <ul class="footer__menu">
                     <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
@@ -744,10 +652,6 @@
                             href="#contact-us">Contact us</a></li>
                 </ul>
             </div>
-        </nav>
-        <div class="footer__copyright">
-            <p class="footer__owner footer__rights-color">© Created by </p>
-            <p class="footer__rights footer__rights-color">All rights Reserved</p>
         </div>
     </footer>
     <!-- Pavlo Sobkiv-->
@@ -765,6 +669,10 @@
     <script src="js/header-music-player.js"></script>
     <script src="js/contacts_information_form.js"></script>
     <script src="js/pricing-product-list.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <!-- <script src="js/cart.js"></script> -->
+  
+    <script src="js/bestsellers.js"></script>
 </body>
 
 </html>
