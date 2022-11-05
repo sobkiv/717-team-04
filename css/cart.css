@@ -1,0 +1,51 @@
+.modal-products {
+  
+
+}
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.cart-products-img{
+    width: 60px;
+    height: 60px;
+
+}
+.cart-products-data {
+    /* margin-left: -300px;
+    margin-top: -5px; */
+}
+.cart-products-name {
+    margin-bottom: 6px;
+}
+.cart-products-price {
+}
+.cart-product-units {
+    display: flex;
+    padding-left: 40px;
+    flex-direction: row;
+    padding-right: 135px;
+    padding-top: 12px;
+}
+.units-minus, .units-plus {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: green;
+    text-align:center;
+}
+.units-number {
+}
+ .total{
+    margin-top: 20px;
+    padding-right: 60px;
+    text-align: right;
+ }
+ .trashcan-img{
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    margin-top: 15px;
+ }
