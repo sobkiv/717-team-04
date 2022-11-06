@@ -31,12 +31,18 @@
             <!-- Burger menu -->
             <div class="header__menu-conteiner active">
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#about-us">About us</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#plants">Plants</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#pick">Pick of the Month</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#pricing">Pricing</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#testimonials">Testimonials</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#contact-us">Contact us</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#about-us">About us</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#plants">Plants</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#pick">Pick of the Month</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#pricing">Pricing</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#testimonials">Testimonials</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#contact-us">Contact us</a></li>
                 </ul>
             </div>
         </nav>
@@ -84,11 +90,12 @@
         </div>
     </header>
     <!-- Pavlo Sobkiv -->
-   
+
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <div class="icon-cart">
-         <img src="img/shopping-bag-svgrepo-com.svg" alt="">
+            <img src="img/shopping-bag-svgrepo-com.svg" alt="">
+            <div class="quantity"></div>
         </div>
     </button>
 
@@ -102,11 +109,14 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <p class="modal-products"></p>
+                    <div class="products-items">
+                    </div>
+                    <p class="total">Total:</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
-                   
+
                 </div>
             </div>
         </div>
@@ -149,96 +159,6 @@
                 <button class="about-us__carousel-next">⪢</button>
             </div>
             <div class="about-us__carousel">
-                <!-- <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/soil_for_plants.svg" alt="Soil for Plants">
-                    <div class="about-us__carousel__title">
-                        <p class="soil-for-plants">Soil for Plants</p>
-                    </div>
-                    <div>
-                        <p class="about-us__carousel__info">It's not easy to find quality soil in New York. We offer the
-                            best
-                            options
-                            for your plants. The soil we
-                            sell is decontaminated and enriched with nutrients.</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/for_home.svg" alt="Plants for Home">
-                    <div class="about-us__carousel__title">
-                        <p class="plants-for-home">Plants for Home</p>
-                    </div>
-                    <div class="about-us__carousel__info">
-                        <p class="info__plants-home">We offer a huge selection of flowers and evergreens that will be a joy
-                            to
-                            see for many years. A charming
-                            plant will be a great addition to the interior.</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/consultations.svg" alt="Consultations">
-                    <div class="about-us__carousel__title">
-                        <p class="consultations">Consultations</p>
-                    </div>
-                    <div class="about-us__carousel__info">
-                        <p class="info__consultations">We not only sell plants and everything related to them but are also
-                            ready
-                            to answer any of your
-                            questions!
-                            Contact us to select the best plant!</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/flowerpots.svg" alt="Sale of Flowerpots">
-                    <div class="about-us__carousel__title">
-                        <p class="sale-of">Sale of Flowerpots</p>
-                    </div>
-                    <div class="about-us__carousel__info">
-                        <p class="info__sale">Purchase flowerpots for plants of any type, from small flowers to huge palm
-                            trees.
-                            Our store offers only
-                            quality flowerpots from trusted manufacturers.</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/plant_food.svg" alt="Plant Food">
-                    <div class="about-us__carousel__title">
-                        <p class="plant-food">Plant Food</p>
-                    </div>
-                    <div class="about-us__carousel__info">
-                        <p class="info__plant-food">We offer everything you need to care for plants. Here you'll find a wide
-                            selection of fertilizers and
-                            medicinal products to combat flower diseases.</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/garden.svg" alt="Plants for Garden">
-                    <div class="about-us__carousel__title">
-                        <p class="plants-garden">Plants for Garden</p>
-                    </div>
-                    <div class="about-us__carousel__info">
-                        <p class="info__plants-garden">Turn your yard into a colorful lawn! Here you will find dozens of
-                            varieties of flowers, both in the form
-                            of seeds, and already sprouted.</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div> -->
             </div>
         </section>
         <!-- Iryna Rolinska  -->
@@ -350,7 +270,7 @@
             </div>
         </section>
         <!-- Papin Vladyslav -->
-        
+
         <!-- Revutsky Stanislav -->
         <section class="features">
             <div class="features__items-and-picture">
@@ -425,57 +345,6 @@
             </div>
 
             <div class=pricing__box-common>
-                <!-- <div class="pricing__box">
-                    <div class="pricing__box-pricefrom">
-                        <span>from</span> <span class="pricing__box-price">$20</span>
-                    </div>
-                    <h3>Small plants</h3>
-                    <div class="pricing__box-plants">
-                        <p>Money Plant</p>
-                        <p>Bryophyllum</p>
-                        <p>Philodendron</p>
-                    </div>
-                    <a class="custom_order" href="#custom_order">CUSTOM ORDER</a>
-                </div>
-                
-                <div class="pricing__box">
-                    <div class="pricing__box-pricefrom">
-                        <span>from</span> <span class="pricing__box-price">$30</span>
-                    </div>
-                    <h3>Succulents</h3>
-                    <div class="pricing__box-plants">
-                        <p>Graptosedum</p>
-                        <p>Elephant bush</p>
-                        <p>Crassula ovata</p>
-                    </div>
-                    <a class="custom_order" href="#custom_order">CUSTOM ORDER</a>
-                </div>
-                
-                <div class="pricing__box">
-                    <div class="pricing__box-pricefrom">
-                        <span>from</span> <span class="pricing__box-price">$20</span>
-                    </div>
-                    <h3>Trees</h3>
-                    <div class="pricing__box-plants">
-                        <p>Raphis Palm</p>
-                        <p>Cedar pine</p>
-                        <p>Thuja</p>
-                    </div>
-                    <a class="custom_order" href="#custom_order">CUSTOM ORDER</a>
-                </div>
-                
-                <div class="pricing__box">
-                    <div class="pricing__box-pricefrom">
-                        <span>from</span> <span class="pricing__box-price">$25</span>
-                    </div>
-                    <h3>Big plants</h3>
-                    <div class="pricing__box-plants">
-                        <p>Dracaena</p>
-                        <p>Dieffenbachia</p>
-                        <p>Rubber Tree</p>
-                    </div>
-                    <a class="custom_order" href="#custom_order">CUSTOM ORDER</a>
-                </div>  -->
             </div>
         </section>
         <!-- Oleksii Khomenko -->
@@ -628,14 +497,6 @@
                     <div class="footer__logo-conteiner">
                         <img width="auto" src="img/logo-footer.svg" class="footer__logo-image" alt="Plants logo">
                     </div>
-                    <ul class="footer__menu">
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#about-us">About us</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#plants">Plants</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#pick">Pick of the Month</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#pricing">Pricing</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#testimonials">Testimonials</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#contact-us">Contact us</a></li>
-                    </ul>
                 </div>
                 <ul class="footer__menu">
                     <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
@@ -670,8 +531,8 @@
     <script src="js/contacts_information_form.js"></script>
     <script src="js/pricing-product-list.js"></script>
     <script src="js/burger-menu.js"></script>
-    <!-- <script src="js/cart.js"></script> -->
-  
+    
+
     <script src="js/bestsellers.js"></script>
 </body>
 
