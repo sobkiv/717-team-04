@@ -1,5 +1,10 @@
 .about-us {
     min-width: 320px;
+    
+    background: url("../img/about-us_image.webp");
+    background-repeat: no-repeat;
+    background-position-y: 1020px;
+    background-color: #faf5f2;
 }
 
 .photo__about-us {
