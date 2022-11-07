@@ -5,6 +5,7 @@
     margin-bottom: -150px;
     display: flex;
     justify-content: space-between;
+
 }
 
 .music-container {
@@ -261,7 +262,7 @@ section div nav .header__navigation .active {
 .header__section {
     background: url("../img/main-photo.webp");
     background-size: cover;
-    background-position: 27% 50%;
+    background-position: 38% 50%;
     min-width: auto;
     min-height: auto;
     display: flex;
@@ -383,6 +384,32 @@ section div nav .header__navigation .active {
     }
 }
 
+@media (max-width: 470px) {
+    .music-container {
+        margin-left: 5px;
+        width: 270px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    
+    
+    .music-info {
+       padding: 10px;
+    }
+    
+    #title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-container {
+        position: fixed;
+        left: -100%;
+    }
+}
+
 @media (min-width: 587px) {
     .header__banner-conteiner {
         max-width: 550px;
@@ -390,10 +417,9 @@ section div nav .header__navigation .active {
 }
 
 @media (min-width: 768px) {
-
     .header__section {
         background-size: cover;
-        background-position: 35% 50%;
+        background-position: 40% 50%;
         min-width: auto;
         min-height: 916px;
         display: flex;
@@ -440,9 +466,12 @@ section div nav .header__navigation .active {
 }
 
 @media (min-width: 992px) {
-
+    .header__music-conteiner {
+        margin-right: 50px;
+        position: ;
+    }
     .header__section {
-        background-position: 30% 50%;
+        background-position: 38% 50%;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -526,6 +555,9 @@ section div nav .header__navigation .active {
 }
 
 @media (min-width: 1268px) {
+.music-container {
+        width: auto;
+    }
 
     .header__music-conteiner {
         position: relative;
