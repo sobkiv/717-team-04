@@ -31,12 +31,18 @@
             <!-- Burger menu -->
             <div class="header__menu-conteiner active">
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#about-us">About us</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#plants">Plants</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#pick">Pick of the Month</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#pricing">Pricing</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#testimonials">Testimonials</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline" href="#contact-us">Contact us</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#about-us">About us</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#plants">Plants</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#pick">Pick of the Month</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#pricing">Pricing</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#testimonials">Testimonials</a></li>
+                    <li class="header__menu-item"><a class="header__menu-item-hover header__menu-item-underline"
+                            href="#contact-us">Contact us</a></li>
                 </ul>
             </div>
         </nav>
@@ -84,6 +90,37 @@
         </div>
     </header>
     <!-- Pavlo Sobkiv -->
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <div class="icon-cart">
+            <img src="img/shopping-bag-svgrepo-com.svg" alt="">
+            <div class="quantity"></div>
+        </div>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Shopping cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-products"></p>
+                    <div class="products-items">
+                    </div>
+                    <p class="total">Total:</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <!-- Iryna Rolinska  -->
         <section class="about-us" id="about-us">
@@ -122,96 +159,6 @@
                 <button class="about-us__carousel-next">⪢</button>
             </div>
             <div class="about-us__carousel">
-                <!-- <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/soil_for_plants.svg" alt="Soil for Plants">
-                    <div class="about-us__carousel__title">
-                        <p class="soil-for-plants">Soil for Plants</p>
-                    </div>
-                    <div>
-                        <p class="about-us__carousel__info">It's not easy to find quality soil in New York. We offer the
-                            best
-                            options
-                            for your plants. The soil we
-                            sell is decontaminated and enriched with nutrients.</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/for_home.svg" alt="Plants for Home">
-                    <div class="about-us__carousel__title">
-                        <p class="plants-for-home">Plants for Home</p>
-                    </div>
-                    <div class="about-us__carousel__info">
-                        <p class="info__plants-home">We offer a huge selection of flowers and evergreens that will be a joy
-                            to
-                            see for many years. A charming
-                            plant will be a great addition to the interior.</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/consultations.svg" alt="Consultations">
-                    <div class="about-us__carousel__title">
-                        <p class="consultations">Consultations</p>
-                    </div>
-                    <div class="about-us__carousel__info">
-                        <p class="info__consultations">We not only sell plants and everything related to them but are also
-                            ready
-                            to answer any of your
-                            questions!
-                            Contact us to select the best plant!</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/flowerpots.svg" alt="Sale of Flowerpots">
-                    <div class="about-us__carousel__title">
-                        <p class="sale-of">Sale of Flowerpots</p>
-                    </div>
-                    <div class="about-us__carousel__info">
-                        <p class="info__sale">Purchase flowerpots for plants of any type, from small flowers to huge palm
-                            trees.
-                            Our store offers only
-                            quality flowerpots from trusted manufacturers.</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/plant_food.svg" alt="Plant Food">
-                    <div class="about-us__carousel__title">
-                        <p class="plant-food">Plant Food</p>
-                    </div>
-                    <div class="about-us__carousel__info">
-                        <p class="info__plant-food">We offer everything you need to care for plants. Here you'll find a wide
-                            selection of fertilizers and
-                            medicinal products to combat flower diseases.</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-about">
-                    <img class="svg__about-us" width="50" src="img/garden.svg" alt="Plants for Garden">
-                    <div class="about-us__carousel__title">
-                        <p class="plants-garden">Plants for Garden</p>
-                    </div>
-                    <div class="about-us__carousel__info">
-                        <p class="info__plants-garden">Turn your yard into a colorful lawn! Here you will find dozens of
-                            varieties of flowers, both in the form
-                            of seeds, and already sprouted.</p>
-                        <a href="#contacts">
-                            <p class="learn-more">LEARN MORE</p>
-                        </a>
-                    </div>
-                </div> -->
             </div>
         </section>
         <!-- Iryna Rolinska  -->
@@ -312,152 +259,29 @@
             </div>
             <div class="best__item">
                 <div class="best__item-btn">
-                    <button type="button" class="best__item-btns">
-                        <span class="best__item-btns-text best__item-btns-text--active">EVERGREENS</span>
+                    <button type="button" class="best__item-btns evergreens-category ">
+                        <span class="best__item-btns-text active ">EVERGREENS</span>
                     </button>
-                    <button type="button" class="best__item-btns">
+                    <button type="button" class="best__item-btns succulents-category">
                         <span class="best__item-btns-text">SUCCULENTS</span>
                     </button>
                 </div>
-                <div class="best__item-tabs">
-                    <div class="best__product">
-                        <a href="floral-moss.html">
-                            <img src="img/floral_moss.png" alt="floral-moss" class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="floral-moss.html" class="bestse__text-link">Floral Moss</a>
-                        </p>
-                        <p class="best__product-price">&#36;33,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order now</button>
-                        </div>
-                    </div>
-                    <div class="best__product">
-                        <a href="areca-palm.html">
-                            <img src="img/areca_palm.png" alt="areca-palm" class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="areca-palm.html" class="best__product-text-link">Areca Palm</a>
-                        </p>
-                        <p class="best__product-price">&#36;22,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order now</button>
-                        </div>
-
-                    </div>
-                    <div class="best__product">
-                        <a href="monstera-obliqua.html">
-                            <img src="img/monstera_obliqua.png" alt="monsera-obliqua" class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="monstera-obliqua.html" class="best__product-text-link">Monstera
-                                Obliqua</a>
-                        </p>
-                        <p class="best__product-price"> &#36;45,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order now</button>
-                        </div>
-                    </div>
-                    <div class="best__product  ">
-                        <a href="sansevieria-trifasciata.html"><img src="img/sansevieria_trifasciata.png"
-                                alt="Sansevieria Trifasciata" class="best__product-img"></a>
-                        <p class="best__product-text">
-                            <a href="sansevieria-trifasciata.html" class="best__product-text-link">Sansevieria
-                                Trifasciata</a>
-                        </p>
-                        <p class="best__product-price">&#36;36,00</p>
-                        <div class="best__product-btn">
-                            <button class="best__product-btn-btn" type="button">Order now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="best__item-tabs">
-                    <div class="best__product">
-                        <a href="graptosedum-darley.html"><img src="img/graptosedum_darley.png" alt="Graptosedum Darley"
-                                class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="graptosedum-darley.html" class="best__product-text-link">Graptosedum Darley</a>
-                        </p>
-                        <p class="best__product-price">&#36;32,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order now</button>
-                        </div>
-                    </div>
-                    <div class="best__product">
-                        <a href="haworthia-venosa.html"><img src="img/haworthia_venosa.png" alt="Haworthia Venosa"
-                                class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="haworthia-venosa.html" class="best__product-text-link">Haworthia
-                                Venosa</a>
-                        </p>
-                        <p class="best__product-price">&#36;48,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order now</button>
-                        </div>
-                    </div>
-                    <div class="best__product">
-                        <a href="silver-torch.html"><img src="img/silver_torch.png" alt="Silver Torch"
-                                class="best__product-img">
-                        </a>
-                        <p class="best__product-text">
-                            <a href="silver-torch.html" class="best__product-text-link">Silver
-                                Torch</a>
-                        </p>
-                        <p class="best__product-price">&#36;32,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order
-                                now</button>
-                        </div>
-                    </div>
-                    <div class="best__product">
-                        <a href="notocactus-roseoluteus.html"><img src="img/notocactus_roseoluteus.png"
-                                alt="Notocactus Roseoluteus" class="best__product-img"></a>
-                        <p class="best__product-text">
-                            <a href="notocactus-roseoluteus.html" class="best__product-text-link">Notocactus
-                                Roseoluteus</a>
-                        </p>
-                        <p class="best__product-price">&#36;33,00</p>
-                        <div class="best__product-btn">
-                            <button type="button" class="best__product-btn-btn">Order
-                                now</button>
-                        </div>
-                    </div>
-                </div>
+                <div class="best-container"></div>
             </div>
         </section>
         <!-- Papin Vladyslav -->
-        <!--Olexandr Sumtsov-->
-        <!-- <section class="statistics">
-            <div class="statistics__item">
-                <p class="statistics__number">120+</p>
-                <p class="statisctics__name">FLOWERS</p>
-            </div>
-            <div class="statistics__item">
-                <p class="statistics__number">239+</p>
-                <p class="statisctics__name">EVERGREENS</p>
-            </div>
-            <div class="statistics__item">
-                <p class="statistics__number">148+</p>
-                <p class="statisctics__name">SUCCULENTS</p>
-            </div>
-            <div class="statistics__item">
-                <p class="statistics__number">150+</p>
-                <p class="statisctics__name">PALM TREES</p>
-            </div>
-        </section> -->
-        <!--Olexandr Sumtsov-->
+
         <!-- Revutsky Stanislav -->
         <section class="features">
-          <div class="features__items-and-picture">
-            <div class="features__items">
-                  <div class="features__info">
-                      <span class="features__info-title">―Features―</span>
-                      <h2 class="features__info-subtitle">Why Choose Us</h2>
-                      <p class="features__info-description">In our store and greenhouse, we grow and sell only the best
-                          plants. With PlantLand you can make your home or office cozier.</p>
-                  </div>
+            <div class="features__items-and-picture">
+                <div class="features__items">
+                    <div class="features__info">
+                        <span class="features__info-title">―Features―</span>
+                        <h2 class="features__info-subtitle">Why Choose Us</h2>
+                        <p class="features__info-description">In our store and greenhouse, we grow and sell only the
+                            best
+                            plants. With PlantLand you can make your home or office cozier.</p>
+                    </div>
                     <article class="features__item">
                         <img class="features__item-icon" src="img/features-icon1.svg" alt="plant-icon">
                         <div class="features__item-text-box">
@@ -521,57 +345,6 @@
             </div>
 
             <div class=pricing__box-common>
-                <!-- <div class="pricing__box">
-                    <div class="pricing__box-pricefrom">
-                        <span>from</span> <span class="pricing__box-price">$20</span>
-                    </div>
-                    <h3>Small plants</h3>
-                    <div class="pricing__box-plants">
-                        <p>Money Plant</p>
-                        <p>Bryophyllum</p>
-                        <p>Philodendron</p>
-                    </div>
-                    <a class="custom_order" href="#custom_order">CUSTOM ORDER</a>
-                </div>
-                
-                <div class="pricing__box">
-                    <div class="pricing__box-pricefrom">
-                        <span>from</span> <span class="pricing__box-price">$30</span>
-                    </div>
-                    <h3>Succulents</h3>
-                    <div class="pricing__box-plants">
-                        <p>Graptosedum</p>
-                        <p>Elephant bush</p>
-                        <p>Crassula ovata</p>
-                    </div>
-                    <a class="custom_order" href="#custom_order">CUSTOM ORDER</a>
-                </div>
-                
-                <div class="pricing__box">
-                    <div class="pricing__box-pricefrom">
-                        <span>from</span> <span class="pricing__box-price">$20</span>
-                    </div>
-                    <h3>Trees</h3>
-                    <div class="pricing__box-plants">
-                        <p>Raphis Palm</p>
-                        <p>Cedar pine</p>
-                        <p>Thuja</p>
-                    </div>
-                    <a class="custom_order" href="#custom_order">CUSTOM ORDER</a>
-                </div>
-                
-                <div class="pricing__box">
-                    <div class="pricing__box-pricefrom">
-                        <span>from</span> <span class="pricing__box-price">$25</span>
-                    </div>
-                    <h3>Big plants</h3>
-                    <div class="pricing__box-plants">
-                        <p>Dracaena</p>
-                        <p>Dieffenbachia</p>
-                        <p>Rubber Tree</p>
-                    </div>
-                    <a class="custom_order" href="#custom_order">CUSTOM ORDER</a>
-                </div>  -->
             </div>
         </section>
         <!-- Oleksii Khomenko -->
@@ -632,56 +405,69 @@
         </section>
         <div class="kind-carousel">
             <button class="kind-carousel-prev">
-                <svg class="kind-carousel__btn-prev" viewBox="0 0 30 30"><defs><path d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z" id="a-1653484000118"></path></defs><use fill-rule="nonzero" opacity=".8" xlink:href="#a-1653484000118"></use></svg>
+                <svg class="kind-carousel__btn-prev" viewBox="0 0 30 30">
+                    <defs>
+                        <path
+                            d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
+                            id="a-1653484000118"></path>
+                    </defs>
+                    <use fill-rule="nonzero" opacity=".8" xlink:href="#a-1653484000118"></use>
+                </svg>
             </button>
             <div class="kind-carousel-container">
 
             </div>
             <button class="kind-carousel-next">
-                <svg class="kind-carousel__btn-next" viewBox="0 0 30 30"><defs><path d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z" id="a-1653484000118"></path></defs><use fill-rule="nonzero" opacity=".8" xlink:href="#a-1653484000118"></use></svg>
+                <svg class="kind-carousel__btn-next" viewBox="0 0 30 30">
+                    <defs>
+                        <path
+                            d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
+                            id="a-1653484000118"></path>
+                    </defs>
+                    <use fill-rule="nonzero" opacity=".8" xlink:href="#a-1653484000118"></use>
+                </svg>
             </button>
         </div>
         <!-- Andrii Romanchuk -->
         <!-- Vladyslav Tymoshenko -->
         <section id="contacts__information-section" class="contacts">
             <div id="contact-us" class="contacts__information">
-                    <div class="contacts__top-text">
-                        <p class="plant__store">
-                            <span class="plant__text">―PLANT STORE―</span>
-                        </p>
-                        <h2 class="layout__top">Contacts</h2>
-                    </div>
-                    <div class="data__components">
-                        <div class="address information__colum">
-                            <h3 class="layout">Address</h3>
-                            <p class="paragraph__info">
-                                <span>84-4 127th St, Kew Gardens,</span> <br>
-                                <span>NY 11415, USA</span>
+                        <div class="contacts__top-text">
+                            <p class="plant__store">
+                                <span class="plant__text">―PLANT STORE―</span>
                             </p>
-
+                            <h2 class="layout__top">Contacts</h2>
                         </div>
-                        <div class="hours information__colum">
-                            <h3 class="layout">Hours</h3>
-                            <p class="paragraph__info">
-                                <span>Monday - Saturday: 11 AM - 9 PM</span> <br>
-                                <span>Sunday: 11 AM - 7 PM</span>
-                            </p>
-                        </div>
-                        <div class="contacts__phone information__colum">
-                            <h3 class="layout">Contacts</h3>
-                            <p class="phone__number paragraph__info">
-                                <span><a class="tel" href="tel:+12345678900">+12345678900</a></span> <br>
-                                <span><a class="e-mail" href="#">plantland@email.com</a></span>
-                            </p>
-                        </div>
-                        <div class="address__map">
-                            <iframe class="iframe__map"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43847.967315901034!2d32.69330564542253!3d46.61692371331511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c40f4fd0435167%3A0x956f17dbb71c1666!2z0JDQotCRLdCc0LDRgNC60LXRgg!5e0!3m2!1sru!2sde!4v1665045313951!5m2!1sru!2sde"
-                                style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>           
-            </div>
+                        <div class="data__components">
+                            <div class="address information__colum">
+                                <h3 class="layout">Address</h3>
+                                <p class="paragraph__info">
+                                    <span>84-4 127th St, Kew Gardens,</span> <br>
+                                    <span>NY 11415, USA</span>
+                                </p>
+                            </div>
+                            <div class="hours information__colum">
+                                <h3 class="layout">Hours</h3>
+                                <p class="paragraph__info">
+                                    <span>Monday - Saturday: 11 AM - 9 PM</span> <br>
+                                    <span>Sunday: 11 AM - 7 PM</span>
+                                </p>
+                            </div>
+                            <div class="contacts__phone information__colum">
+                                <h3 class="layout">Contacts</h3>
+                                <p class="phone__number paragraph__info">
+                                    <span><a class="tel" href="tel:+12345678900">+12345678900</a></span> <br>
+                                    <span><a class="e-mail" href="#">plantland@email.com</a></span>
+                                </p>
+                            </div>
+                        </div>                                     
+                    <div class="address__map">
+                        <iframe class="iframe__map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43847.967315901034!2d32.69330564542253!3d46.61692371331511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c40f4fd0435167%3A0x956f17dbb71c1666!2z0JDQotCRLdCc0LDRgNC60LXRgg!5e0!3m2!1sru!2sde!4v1665045313951!5m2!1sru!2sde"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>  
+                </div>      
             <div class="contacts__form">
                 <form id="submit__form" class="request__form" action="https://formspree.io/f/mwkzbzne" method="POST">
                     <div class="contacts__form-text">
@@ -701,6 +487,7 @@
         </section>
         <!-- Vladyslav Tymoshenko -->
     </main>
+    <div class="alert-container"></div>
     <!-- Pavlo Sobkiv-->
     <footer class="footer">
         <div class="footer-conteiner">
@@ -709,19 +496,21 @@
                     <div class="footer__logo-conteiner">
                         <img width="auto" src="img/logo-footer.svg" class="footer__logo-image" alt="Plants logo">
                     </div>
-                    <ul class="footer__menu">
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#about-us">About us</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#plants">Plants</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#pick">Pick of the Month</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#pricing">Pricing</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#testimonials">Testimonials</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color" href="#contact-us">Contact us</a></li>
-                    </ul>
                 </div>
-            </nav>
-            <div class="footer__copyright">
-                <p class="footer__owner footer__rights-color">© Created by </p>
-                <p class="footer__rights footer__rights-color">All rights Reserved</p>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
+                            href="#about-us">About us</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
+                            href="#plants">Plants</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
+                            href="#pick">Pick of the Month</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
+                            href="#pricing">Pricing</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
+                            href="#testimonials">Testimonials</a></li>
+                    <li class="footer__menu-item"><a class="footer__menu-item-hover footer__menu-item-light-color"
+                            href="#contact-us">Contact us</a></li>
+                </ul>
             </div>
         </div>
     </footer>
@@ -741,6 +530,9 @@
     <script src="js/contacts_information_form.js"></script>
     <script src="js/pricing-product-list.js"></script>
     <script src="js/burger-menu.js"></script>
+    
+
+    <script src="js/bestsellers.js"></script>
 </body>
 
 </html>

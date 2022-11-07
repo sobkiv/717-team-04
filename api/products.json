@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "title": "Floral Moss",
+        "image": "floral_moss.png",
+        "price": 22.00
+    },
+    {
+        "id": "2",
+        "title": "Areca Palm",
+        "image": "areca_palm.png",
+        "price": 33.00
+    }
+]

@@ -1,0 +1,30 @@
+.btn-primary {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    z-index: 20;
+    border-radius: 50%;
+    background-color: var(--btn-text);
+    border-color: var(--btn-text);
+
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-text);
+    border-color: var(--btn-text);
+    transition: all 0.9s;
+}
+
+.quantity {
+    width: 22px;
+    height: 22px;
+    position: fixed;
+    right: 25px;
+    top: 100px;
+    z-index: 20;
+    border-radius: 50%;
+    background-color: var(--subtitle-color);
+    border-color: var(--btn-text);
+}
