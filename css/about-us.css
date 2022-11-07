@@ -62,8 +62,6 @@
 .carousel-about {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     width: 270px;
     height: 387px;
     margin: 10px;
@@ -89,6 +87,7 @@
     border-radius: 50%;
     color: #79a207;
     width: 50px;
+    margin-right:20px;
 }
 
 .about-us__carousel__title {
@@ -96,28 +95,33 @@
     font-size: 20px;
     font-weight: bolder;
     font-weight: 900;
+    margin:20px;
 }
 
+.learn-more{
+    font-size:10px;
+    font-weight: bolder;
+    color: rgb(0, 48, 3);
+    
+}
 .about-us__carousel__info {
     color: rgb(91, 95, 91);
+    margin: 20px;
 }
 
-.about-us__carousel__item {
-    display: flex;
-    justify-content: center;
-    background-color: #79a207;
-    border-radius: 50%;
-    color: #0d3c00;
-    width: 100px;
-}
+
 
 .about-us__carousel-prev,
 .about-us__carousel-next {
     border-radius: 50%;
-    background-color: #79a207;
+    background: #79a207;
     width: 27px;
     height: 27px;
     margin: auto;
+    line-height: 5px;
+    cursor: pointer;
+    border: none;
+    color: #fffefe;
 }
 
 .about-us__carousel-js {
