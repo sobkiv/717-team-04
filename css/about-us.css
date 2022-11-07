@@ -7,7 +7,9 @@
     margin-top: 80px;
     margin-right: 40px;
 }
-
+.photo-wave{
+    max-width: fit-content;
+}
 
 .about-us__subtitle {
     color: #79a207;
