@@ -8,6 +8,11 @@
     margin-right: 40px;
 }
 
+.photo__wave {
+    width: 1500px;
+
+}
+
 .about-us__subtitle {
     color: #79a207;
     text-align: left;
@@ -88,7 +93,7 @@
     border-radius: 50%;
     color: #79a207;
     width: 50px;
-    margin:20px;
+    margin: 20px;
 }
 
 .about-us__carousel__title {
@@ -96,15 +101,16 @@
     font-size: 20px;
     font-weight: bolder;
     font-weight: 900;
-    margin:20px;
+    margin: 20px;
 }
 
-.learn-more{
-    font-size:10px;
+.learn-more {
+    font-size: 10px;
     font-weight: bolder;
     color: rgb(0, 48, 3);
-    
+
 }
+
 .about-us__carousel__info {
     color: rgb(91, 95, 91);
     margin: 20px;
