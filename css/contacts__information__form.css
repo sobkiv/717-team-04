@@ -119,6 +119,7 @@ input {
   border: none;
   border-width: 1px;
   border-radius: 21px;
+  transition: 0.3s;
 }
 #submit__button:hover{
   background-color: var(--kind-carousel-item-color);
