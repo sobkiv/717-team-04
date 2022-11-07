@@ -9,6 +9,7 @@
 }
 .photo-wave{
     max-width: fit-content;
+    margin: auto;
 }
 
 .about-us__subtitle {
