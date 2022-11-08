@@ -151,6 +151,9 @@
         width: 344px;
         margin: auto;
     }
+    .photo-wave{
+        max-width: 320px;
+    }
 }
 
 @media(min-width:768px) {
@@ -169,6 +172,9 @@
 
     .photo__about {
         width: 544px;
+    }
+    .photo-wave{
+        max-width: 768px;
     }
 }
 
