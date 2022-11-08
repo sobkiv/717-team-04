@@ -31,3 +31,10 @@
     background-color: var(--subtitle-color);
     border-color: var(--btn-text);
 }
+
+@media (max-width: 767px) {
+    .btn-primary {
+        width: 52px;
+        height: 52px;
+    }
+}
