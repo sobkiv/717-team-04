@@ -1,14 +1,13 @@
 .btn-primary {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     position: fixed;
     right: 20px;
-    top: 100px;
+    top: 85px;
     z-index: 20;
     border-radius: 50%;
     background-color: var(--btn-text);
     border-color: var(--btn-text);
-
 }
 
 .btn-primary:hover {
@@ -18,11 +17,15 @@
 }
 
 .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 22px;
     height: 22px;
     position: fixed;
-    right: 25px;
-    top: 100px;
+    right: 20px;
+    font-size: small;
+    top: 85px;
     z-index: 20;
     border-radius: 50%;
     background-color: var(--subtitle-color);

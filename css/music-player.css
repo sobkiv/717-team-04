@@ -139,7 +139,6 @@
         margin-bottom: 70px;
     }
 
-
     .music-info {
         padding: 10px;
     }
@@ -152,6 +151,16 @@
     .img-container {
         position: fixed;
         left: -100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .header__music-conteiner {
+        margin-bottom: auto;
+    }
+
+    .header__music-conteiner {
+        margin-bottom: -90px;
     }
 }
 
@@ -175,6 +184,6 @@
 
     .header__music-conteiner {
         position: relative;
-        left: 380px;
+        left: 400px;
     }
 }
