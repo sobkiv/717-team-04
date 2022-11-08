@@ -27,7 +27,6 @@
 .random-plant{
   font-size: 18px;
   margin: 3px 8px;
-  /* color:  var(--kind-carousel-item-color); */
   color: lightgray;
 }
 .plant-today__randomise-button{
